@@ -1,0 +1,18 @@
+#department{
+    .inner {
+        width:  1180px;
+        margin: 0px auto;
+
+        h1{
+            font:normal 18px/1 'Lora';
+            padding-top: 70px;
+            font-weight: 800;
+    
+            span{
+                color:#EF4136;
+                font:normal 22px/1 'Lora';
+                font-weight: 800;
+            }
+        }
+    }
+}
