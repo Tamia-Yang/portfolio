@@ -39,8 +39,8 @@ input, a, button {
       font: normal 22px/1 'Lora';
       font-weight: 800; }
   #department .inner .wrap {
-    margin-top: 70px;
-    margin-bottom: 100px;
+    margin-top: 30px;
+    margin-bottom: 150px;
     position: relative; }
     #department .inner .wrap::after {
       content: '';
@@ -61,8 +61,11 @@ input, a, button {
       width: 700px;
       position: absolute;
       right: 0;
-      top: 400px;
+      top: 350px;
       z-index: 3; }
+      #department .inner .wrap .text h1 {
+        margin-bottom: 30px;
+        color: #222; }
     #department .inner .wrap .bg {
       float: right;
       width: 50%;
@@ -87,8 +90,30 @@ input, a, button {
       text-align: center;
       padding-top: 20px;
       font-weight: bold; }
+    #department .inner .wrap .exterior-text {
+      position: absolute;
+      width: 450px;
+      left: 0;
+      top: 58%;
+      z-index: 1; }
+    #department .inner .wrap .exterior-bg {
+      width: 50%;
+      position: absolute;
+      background-color: #f2f5f9;
+      right: -50px;
+      top: 55%;
+      z-index: 1;
+      width: 400%;
+      height: 270px; }
+    #department .inner .wrap .exterior {
+      width: 55%;
+      filter: grayscale(1);
+      position: absolute;
+      top: 45%;
+      right: 0%;
+      z-index: 3; }
     #department .inner .wrap .organize {
-      margin-top: 1000px; }
+      margin-top: 1500px; }
       #department .inner .wrap .organize .ceo {
         position: relative; }
         #department .inner .wrap .organize .ceo::after {
@@ -1427,7 +1452,7 @@ a {
   z-index: 2;
   width: 100%;
   height: 70px;
-  background: #292931; }
+  background-color: #fff; }
   #header .inner {
     width: 1180px;
     margin: 0 auto;
@@ -1465,7 +1490,7 @@ a {
         display: block;
         width: 100%;
         height: 2px;
-        background: #fff;
+        background: #000;
         position: absolute;
         bottom: 0;
         left: 0;
@@ -1475,7 +1500,7 @@ a {
         display: block;
         width: 100%;
         height: 2px;
-        background: #fff;
+        background: #000;
         position: absolute;
         top: 0;
         left: 0;
@@ -1484,7 +1509,7 @@ a {
         display: block;
         width: 70%;
         height: 2px;
-        background: #fff;
+        background: #000;
         position: absolute;
         top: 50%;
         left: 0;
@@ -1544,7 +1569,7 @@ a {
         text-align: center; }
         #header .inner #gnb > li > a {
           display: block;
-          color: white;
+          color: #EF4136;
           padding: 0 18px;
           font-weight: 400;
           font-size: 14px;
@@ -1587,7 +1612,7 @@ a {
         padding: 6px;
         font-size: 16px;
         line-height: 20px;
-        color: white;
+        color: #292931;
         transition: 0.3s; }
         #header .inner .social a:hover {
           color: #EF4136; }
