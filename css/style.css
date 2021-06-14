@@ -38,6 +38,186 @@ input, a, button {
       color: #EF4136;
       font: normal 22px/1 'Lora';
       font-weight: 800; }
+  #department .inner .wrap {
+    margin-top: 70px;
+    margin-bottom: 100px;
+    position: relative; }
+    #department .inner .wrap::after {
+      content: '';
+      display: block;
+      clear: both; }
+    #department .inner .wrap h1 {
+      font-size: 40px;
+      opacity: 60%; }
+      #department .inner .wrap h1 img {
+        width: 35px;
+        opacity: 60%; }
+        #department .inner .wrap h1 img:nth-of-type(2) {
+          transform: rotate(180deg); }
+    #department .inner .wrap h2 {
+      opacity: 50%;
+      padding-top: 30px; }
+    #department .inner .wrap .text {
+      width: 700px;
+      position: absolute;
+      right: 0;
+      top: 400px;
+      z-index: 3; }
+    #department .inner .wrap .bg {
+      float: right;
+      width: 50%;
+      position: absolute;
+      left: 0;
+      margin-top: 100px;
+      margin-left: 260px;
+      z-index: 1; }
+      #department .inner .wrap .bg::before {
+        content: '';
+        display: block;
+        background-color: #eee;
+        width: 400%;
+        height: 400px;
+        z-index: 1; }
+    #department .inner .wrap .founder {
+      position: absolute;
+      left: 0;
+      top: 400px;
+      z-index: 3; }
+    #department .inner .wrap p {
+      text-align: center;
+      padding-top: 20px;
+      font-weight: bold; }
+    #department .inner .wrap .organize {
+      margin-top: 1000px; }
+      #department .inner .wrap .organize .ceo {
+        position: relative; }
+        #department .inner .wrap .organize .ceo::after {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 188px;
+          left: 50%;
+          background-color: #e03254;
+          width: 2px;
+          height: 30px; }
+      #department .inner .wrap .organize .staff {
+        margin-top: 85px;
+        position: relative; }
+        #department .inner .wrap .organize .staff::before {
+          content: '';
+          display: block;
+          position: absolute;
+          top: -50px;
+          left: 147px;
+          background-color: #e03254;
+          width: 886px;
+          height: 1px; }
+        #department .inner .wrap .organize .staff ul {
+          float: left;
+          width: calc(100% / 4);
+          position: relative; }
+          #department .inner .wrap .organize .staff ul .picture {
+            margin-top: -20px; }
+          #department .inner .wrap .organize .staff ul::after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: -50px;
+            left: 50%;
+            background-color: #e03254;
+            width: 2px;
+            height: 30px; }
+          #department .inner .wrap .organize .staff ul::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 170px;
+            left: 50%;
+            background-color: #e03254;
+            width: 2px;
+            height: 30px; }
+      #department .inner .wrap .organize .employee ul {
+        margin-top: 25px;
+        float: left;
+        width: calc(100% / 4);
+        position: relative; }
+        #department .inner .wrap .organize .employee ul .second::after {
+          content: '';
+          display: block;
+          width: 52px;
+          height: 52px;
+          background-color: #fff;
+          border: 1px solid red;
+          border-radius: 50%;
+          position: absolute;
+          left: 30px;
+          top: 62px;
+          z-index: 1; }
+        #department .inner .wrap .organize .employee ul .second::before {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 46px;
+          left: 50%;
+          background-color: #e03254;
+          width: 2px;
+          height: 22px; }
+        #department .inner .wrap .organize .employee ul li {
+          margin-left: 65px;
+          width: 180px;
+          height: 45px;
+          background-color: #c9c7c7;
+          border-radius: 0 20px 20px 0;
+          padding-top: 0;
+          font-style: normal;
+          font-size: 14px;
+          color: #e03254; }
+          #department .inner .wrap .organize .employee ul li::after {
+            content: '';
+            display: block;
+            width: 52px;
+            height: 52px;
+            background-color: #fff;
+            border: 1px solid red;
+            border-radius: 50%;
+            position: absolute;
+            left: 30px;
+            top: -5px;
+            z-index: 1; }
+          #department .inner .wrap .organize .employee ul li:nth-child(2) .fa-user-circle {
+            position: absolute;
+            top: 62px; }
+          #department .inner .wrap .organize .employee ul li:nth-child(2) {
+            margin-top: 20px; }
+          #department .inner .wrap .organize .employee ul li span {
+            display: block;
+            padding-top: 7px;
+            color: #111;
+            font-weight: bold; }
+          #department .inner .wrap .organize .employee ul li .fa-user-circle {
+            position: absolute;
+            left: 30px;
+            top: -5px;
+            font-size: 45px;
+            border: 2px solid;
+            border-color: #e03254;
+            border-radius: 50%;
+            padding: 3px;
+            color: #e03254;
+            z-index: 2; }
+    #department .inner .wrap ul {
+      text-align: center; }
+      #department .inner .wrap ul .picture {
+        width: 130px;
+        height: 130px; }
+      #department .inner .wrap ul .name {
+        color: #e03254;
+        font-size: 14px; }
+      #department .inner .wrap ul .job-title {
+        font-weight: bold;
+        font-size: 17px;
+        padding-top: 10px;
+        color: #111; }
 
 #visual {
   width: 100%;
@@ -47,7 +227,9 @@ input, a, button {
 
 #members .inner {
   width: 1180px;
-  margin: 0px auto; }
+  margin: 0px auto;
+  font-size: 13px;
+  font-family: 'Nanum Gothic Coding', monospace; }
   #members .inner h1 {
     font: normal 18px/1 'Lora';
     padding-top: 70px;
@@ -57,76 +239,20 @@ input, a, button {
       font: normal 22px/1 'Lora';
       font-weight: 800; }
   #members .inner .wrap {
-    text-align: center; }
-    #members .inner .wrap > ul {
-      margin: 70px 0; }
-      #members .inner .wrap > ul li {
-        display: inline-block;
-        border-radius: 50%;
-        color: white;
-        background-color: #222;
-        width: 35px;
-        height: 35px;
-        line-height: 35px;
-        margin: 0 80px;
-        z-index: 1;
-        position: relative; }
-        #members .inner .wrap > ul li:nth-child(1) {
-          background-color: #EF4136;
-          z-index: 3; }
-        #members .inner .wrap > ul li:nth-child(1)::before {
-          content: '';
-          width: 60px;
-          height: 2px;
-          background-color: #EF4136;
-          bottom: 49%;
-          left: -60px;
-          z-index: 3;
-          position: absolute; }
-        #members .inner .wrap > ul li:nth-child(4)::before {
-          content: '';
-          width: 60px;
-          height: 2px;
-          background-color: #222;
-          position: absolute;
-          bottom: 49%;
-          left: 35px;
-          z-index: 1; }
-        #members .inner .wrap > ul li:nth-child(2)::after, #members .inner .wrap > ul li:nth-child(3)::after, #members .inner .wrap > ul li:nth-child(4)::after {
-          content: '';
-          width: 177px;
-          height: 2px;
-          background-color: #222;
-          position: absolute;
-          bottom: 49%;
-          z-index: 1;
-          left: -170px; }
-    #members .inner .wrap .text ul::after {
-      content: '';
-      display: block;
-      clear: both; }
-    #members .inner .wrap .text ul li {
-      position: relative;
-      top: -60px;
-      margin: 0 65px;
-      float: left;
-      margin: 0 74px;
-      left: 16%;
-      font-family: 'Nanum Gothic Coding', monospace;
-      font-weight: 800;
-      color: #111;
-      font-size: 13px; }
+    text-align: center;
+    margin-top: 50px; }
     #members .inner .wrap .main-text {
       background-color: #f8f8f8;
       border: 1px solid #ddd;
       padding: 20px;
-      width: 100%;
       padding-bottom: 60px; }
       #members .inner .wrap .main-text #first-answer, #members .inner .wrap .main-text #second-yes {
         float: left;
-        margin-left: 30px; }
+        margin-left: 30px;
+        vertical-align: middle; }
       #members .inner .wrap .main-text #first-no, #members .inner .wrap .main-text #second-no {
-        margin-left: 20px; }
+        margin-left: 20px;
+        vertical-align: middle; }
       #members .inner .wrap .main-text h1 {
         padding-bottom: 30px;
         font-family: 'Nanum Gothic Coding', monospace;
@@ -153,6 +279,9 @@ input, a, button {
         padding-left: 10px;
         font-family: 'Nanum Gothic Coding', monospace;
         font-weight: 600; }
+        #members .inner .wrap .main-text p input, #members .inner .wrap .main-text .consent input {
+          vertical-align: middle;
+          margin-right: 5px; }
     #members .inner .wrap .total-agree {
       width: 100%;
       height: 50px;
@@ -171,14 +300,133 @@ input, a, button {
         float: right;
         line-height: 50px;
         padding-right: 40px; }
-    #members .inner .wrap .button button {
+
+#register .inner {
+  width: 1180px;
+  margin: 0 auto;
+  font-size: 13px;
+  font-family: 'Nanum Gothic Coding', monospace; }
+  #register .inner .wrap {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: 30px;
+    width: 100%;
+    box-sizing: border-box; }
+    #register .inner .wrap p {
+      font-size: 15px;
+      font-weight: 800;
+      padding-bottom: 30px; }
+    #register .inner .wrap h2 {
+      font-size: 15px;
+      padding-bottom: 8px;
+      font-weight: 800; }
+    #register .inner .wrap .content {
+      background-color: white;
+      border: 1px solid #ddd;
+      padding: 30px;
+      margin-bottom: 25px; }
+      #register .inner .wrap .content table {
+        background-color: #fff;
+        border-top: 1px solid #222;
+        padding: 30px;
+        width: 100%; }
+        #register .inner .wrap .content table th {
+          width: 14%;
+          height: 45px;
+          background-color: #f8f8f8;
+          border-bottom: 1px solid #ddd;
+          border-right: 1px solid #ddd; }
+        #register .inner .wrap .content table .personal {
+          padding: 0 15px; }
+        #register .inner .wrap .content table td {
+          background-color: #fff;
+          border-bottom: 1px solid #ddd; }
+          #register .inner .wrap .content table td #sample4_jibunAddress {
+            margin-bottom: 7px; }
+          #register .inner .wrap .content table td #sample4_postcode {
+            width: 160px;
+            margin-top: 7px;
+            margin-bottom: 7px; }
+          #register .inner .wrap .content table td #sample4_detailAddress {
+            width: 160px; }
+          #register .inner .wrap .content table td #search-mailcode {
+            width: 120px;
+            font-size: 10px;
+            background-color: #24315c;
+            color: white; }
+          #register .inner .wrap .content table td select {
+            margin-left: 20px;
+            height: 25px;
+            width: 150px;
+            border: 1px solid #ddd;
+            color: #333;
+            font-size: 12px; }
+          #register .inner .wrap .content table td em {
+            font-style: normal;
+            font-size: 12px;
+            color: #777; }
+          #register .inner .wrap .content table td input[type="radio"] {
+            color: red; }
+        #register .inner .wrap .content table span {
+          color: red; }
+        #register .inner .wrap .content table input {
+          border: 1px solid #ccc;
+          margin-left: 12px;
+          height: 25px;
+          width: 300px; }
+          #register .inner .wrap .content table input::placeholder {
+            font-size: 11px;
+            color: #999;
+            padding-left: 10px; }
+        #register .inner .wrap .content table .name-confirm {
+          color: white;
+          font-size: 10px;
+          background-color: #24315c;
+          padding: 6px 8px;
+          border: none;
+          outline: none; }
+    #register .inner .wrap .add input[type=radio] {
+      border: 0px;
+      width: 10px;
+      height: 10px;
+      margin-right: 20px;
+      margin-left: 2px; }
+    #register .inner .wrap .add td, #register .inner .wrap .add th {
+      border-top: 1px solid #ddd; }
+  #register .inner .receive-agree {
+    background-color: #f8f8f8;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    padding: 30px; }
+    #register .inner .receive-agree h1 {
+      padding: 10px 0;
+      font: normal 18px/1 'Lora';
+      font-weight: 800; }
+    #register .inner .receive-agree .inner {
+      width: 100%;
       margin: 0 auto;
-      width: 90px;
-      height: 36px;
+      font-size: 13px;
+      padding: 20px;
       background-color: #fff;
-      border: 1px solid #3334;
-      margin: 10px;
-      margin-bottom: 150px; }
+      border: 1px solid #ddd;
+      font-family: 'Nanum Gothic Coding', monospace;
+      box-sizing: border-box; }
+      #register .inner .receive-agree .inner input {
+        margin: 5px 0; }
+  #register .inner .button {
+    text-align: center;
+    margin-bottom: 100px;
+    margin-top: 50px; }
+    #register .inner .button button {
+      width: 60px;
+      height: 30px;
+      font-size: 12px;
+      background-color: #fff;
+      outline: none;
+      border: 1px solid #666; }
+      #register .inner .button button:hover {
+        color: white;
+        background-color: #24315c; }
 
 #vidGallery {
   width: 100%; }
@@ -1152,202 +1400,6 @@ figure .text-content {
         color: white; }
       #contact .inner #bottom-info .text .bottom-right h1 {
         padding-bottom: 14px; }
-
-#register .inner {
-  width: 1180px;
-  margin: 0 auto;
-  font-size: 13px;
-  font-family: 'Nanum Gothic Coding', monospace; }
-  #register .inner .process-map {
-    text-align: center; }
-    #register .inner .process-map > ul {
-      margin: 70px 0; }
-      #register .inner .process-map > ul li {
-        display: inline-block;
-        border-radius: 50%;
-        color: white;
-        background-color: #222;
-        width: 35px;
-        height: 35px;
-        line-height: 35px;
-        margin: 0 80px;
-        z-index: 3;
-        position: relative; }
-        #register .inner .process-map > ul li:nth-child(1), #register .inner .process-map > ul li:nth-child(2) {
-          background-color: #EF4136;
-          z-index: 3; }
-        #register .inner .process-map > ul li:nth-child(1)::before, #register .inner .process-map > ul li:nth-child(2)::before {
-          content: '';
-          width: 60px;
-          height: 2px;
-          background-color: #EF4136;
-          bottom: 49%;
-          left: -60px;
-          z-index: 3;
-          position: absolute; }
-        #register .inner .process-map > ul li:nth-child(4)::before {
-          content: '';
-          width: 60px;
-          height: 2px;
-          background-color: #222;
-          position: absolute;
-          bottom: 49%;
-          left: 35px;
-          z-index: 1; }
-        #register .inner .process-map > ul li:nth-child(3)::after, #register .inner .process-map > ul li:nth-child(4)::after {
-          content: '';
-          width: 177px;
-          height: 2px;
-          background-color: #222;
-          position: absolute;
-          bottom: 49%;
-          z-index: 1;
-          left: -170px; }
-        #register .inner .process-map > ul li:nth-child(2)::after {
-          content: '';
-          width: 160px;
-          height: 2px;
-          background-color: #EF4136;
-          bottom: 49%;
-          left: -180px;
-          z-index: 3;
-          position: absolute; }
-    #register .inner .process-map .text ul::after {
-      content: '';
-      display: block;
-      clear: both; }
-    #register .inner .process-map .text ul li {
-      position: relative;
-      top: -60px;
-      margin: 0 65px;
-      float: left;
-      margin: 0 74px;
-      left: 16%;
-      font-family: 'Nanum Gothic Coding', monospace;
-      font-weight: 800;
-      color: #111;
-      font-size: 13px; }
-  #register .inner h1 {
-    font: normal 18px/1 'Lora';
-    padding-top: 70px;
-    font-weight: 800; }
-    #register .inner h1 span {
-      color: #EF4136;
-      font: normal 22px/1 'Lora';
-      font-weight: 800; }
-  #register .inner .wrap {
-    background-color: #f8f8f8;
-    border: 1px solid #ddd;
-    padding: 30px; }
-    #register .inner .wrap p {
-      font-size: 15px;
-      font-weight: 800;
-      padding-bottom: 30px; }
-    #register .inner .wrap h2 {
-      font-size: 15px;
-      padding-bottom: 8px;
-      font-weight: 800; }
-    #register .inner .wrap .content {
-      background-color: white;
-      border: 1px solid #ddd;
-      padding: 30px;
-      margin-bottom: 25px; }
-      #register .inner .wrap .content table {
-        background-color: #fff;
-        border-top: 1px solid #222;
-        padding: 30px;
-        width: 100%; }
-        #register .inner .wrap .content table th {
-          width: 14%;
-          height: 45px;
-          background-color: #f8f8f8;
-          border-bottom: 1px solid #ddd;
-          border-right: 1px solid #ddd; }
-        #register .inner .wrap .content table td {
-          background-color: #fff;
-          border-bottom: 1px solid #ddd;
-          padding-left: 5px; }
-          #register .inner .wrap .content table td #sample4_jibunAddress {
-            margin-bottom: 7px; }
-          #register .inner .wrap .content table td #sample4_postcode {
-            width: 160px;
-            margin-top: 7px;
-            margin-bottom: 7px; }
-          #register .inner .wrap .content table td #sample4_detailAddress {
-            width: 160px; }
-          #register .inner .wrap .content table td #search-mailcode {
-            width: 120px;
-            font-size: 10px;
-            background-color: #24315c;
-            color: white; }
-          #register .inner .wrap .content table td select {
-            margin-left: 20px;
-            height: 25px;
-            width: 150px;
-            border: 1px solid #ddd;
-            color: #333;
-            font-size: 12px; }
-          #register .inner .wrap .content table td em {
-            font-style: normal;
-            font-size: 12px;
-            color: #777; }
-          #register .inner .wrap .content table td input[type="radio"] {
-            color: red; }
-        #register .inner .wrap .content table span {
-          color: red; }
-        #register .inner .wrap .content table input {
-          border: 1px solid #ccc;
-          margin-left: 12px;
-          height: 25px;
-          width: 300px; }
-          #register .inner .wrap .content table input::placeholder {
-            font-size: 11px;
-            color: #999;
-            padding-left: 10px; }
-        #register .inner .wrap .content table .name-confirm {
-          color: white;
-          font-size: 10px;
-          background-color: #24315c;
-          padding: 6px 8px;
-          border: none;
-          outline: none; }
-    #register .inner .wrap .add input[type=radio] {
-      border: 0px;
-      width: 10px;
-      height: 10px;
-      margin-right: 20px;
-      margin-left: 2px; }
-    #register .inner .wrap .add td, #register .inner .wrap .add th {
-      border-top: 1px solid #ddd; }
-  #register .inner .receive-agree {
-    background-color: #f8f8f8;
-    margin-top: 20px;
-    border: 1px solid #ddd;
-    padding: 30px; }
-    #register .inner .receive-agree h1 {
-      padding: 10px 0;
-      font: normal 18px/1 'Lora';
-      font-weight: 800; }
-    #register .inner .receive-agree .list {
-      background-color: #fff;
-      border: 1px solid #ddd;
-      padding: 20px; }
-      #register .inner .receive-agree .list input {
-        margin: 6px 5px; }
-  #register .inner .button {
-    text-align: center;
-    margin-bottom: 100px;
-    margin-top: 50px; }
-    #register .inner .button button {
-      width: 60px;
-      height: 30px;
-      font-size: 12px;
-      background-color: #fff;
-      outline: none;
-      border: 1px solid #666; }
-      #register .inner .button button:hover {
-        color: white;
-        background-color: #24315c; }
 
 body {
   color: #555;

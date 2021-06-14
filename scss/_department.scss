@@ -14,5 +14,264 @@
                 font-weight: 800;
             }
         }
+        .wrap   {
+            margin-top: 70px;
+            margin-bottom: 100px;
+            position:relative;
+
+            &::after{
+                content: '';
+                display: block;
+                clear: both;
+            }
+
+            h1{
+                font-size: 40px;
+                opacity:60%;
+                img{
+                    width: 35px;
+                    opacity: 60%;
+
+                    &:nth-of-type(2){
+                        transform: rotate(180deg);
+                    }
+                    
+                }
+              
+            }
+
+            h2{
+                opacity:50%;
+                padding-top: 30px;
+            }
+                .text{
+                    width: 700px;
+                    position:absolute;
+                    right: 0;
+                    top: 400px;
+                    z-index: 3;
+                }
+                .bg{
+                    float:right;
+                    width: 50%;
+                    position:absolute;
+                    left: 0;
+                    margin-top: 100px;
+                    margin-left: 260px;
+                    z-index: 1;
+
+                    &::before{
+                        content: '';
+                        display: block;
+                        background-color: #eee;
+                        width: 400%;
+                        height: 400px;
+                        z-index: 1;
+
+                    }
+                }
+                .founder {
+                    position:absolute;
+                    left: 0;
+                    top:400px;
+                    z-index: 3;
+                }
+         
+                p{
+                    text-align: center;
+                    padding-top: 20px;
+                    font-weight: bold;
+                }
+        
+            .organize {
+                margin-top: 1000px;
+                    
+                    .ceo {
+                        position:relative;
+                        &::after{
+                            content: '';
+                            display: block;
+                            position: absolute;
+                            top:188px;
+                            left: 50%;
+                            background-color: #e03254;
+                            width: 2px;
+                            height: 30px;
+                        }
+                    }
+                
+                    .staff{
+                        margin-top: 85px;
+                        position: relative;
+                    
+                        &::before{
+                            content: '';
+                            display: block;
+                            position: absolute;
+                            top:-50px;
+                            left: 147px;
+                            background-color: #e03254;
+                            width: 886px;
+                            height: 1px;
+                        }
+                    
+                
+                        ul{
+                            float: left;
+                            width: calc(100% / 4);
+                            position: relative;
+                            
+                            .picture{
+                                margin-top: -20px;
+                            }
+
+                            &::after{
+                                content: '';
+                                display: block;
+                                position: absolute;
+                                top:-50px;
+                                left: 50%;
+                                background-color: #e03254;
+                                width: 2px;
+                                height: 30px;
+                            }
+                            &::before{
+                                content: '';
+                                display: block;
+                                position: absolute;
+                                top:170px;
+                                left: 50%;
+                                background-color: #e03254;
+                                width: 2px;
+                                height: 30px;
+                            }
+                        }
+
+                        
+                    }
+                    .employee {
+                        
+                        ul{
+                            margin-top:25px;
+                            float: left;
+                            width: calc(100% / 4);
+                            position:relative;
+
+                            .second{
+                                &::after{
+                                    content: '';
+                                    display: block;
+                                    width: 52px;
+                                    height: 52px;
+                                    background-color: #fff;
+                                    border: 1px solid red;
+                                    border-radius: 50%;
+                                    position:absolute;
+                                    left: 30px;
+                                    top: 62px;
+                                    z-index: 1;
+                                }
+                                &::before{
+                                    content: '';
+                                    display: block;
+                                    position: absolute;
+                                    top:46px;
+                                    left: 50%;
+                                    background-color: #e03254;
+                                    width: 2px;
+                                    height: 22px;
+                                }
+                            }
+
+                            li{
+                                margin-left: 65px;
+                                width: 180px;
+                                height: 45px;
+                                background-color: #c9c7c7;
+                                border-radius: 0 20px 20px 0;
+                                padding-top:0;
+                                font-style: normal;
+                                font-size: 14px;
+                                color:#e03254;
+
+                                &::after{
+                                    content: '';
+                                    display: block;
+                                    width: 52px;
+                                    height: 52px;
+                                    background-color: #fff;
+                                    border: 1px solid red;
+                                    border-radius: 50%;
+                                    position:absolute;
+                                    left: 30px;
+                                    top: -5px;
+                                    z-index: 1;
+                                }
+                                
+
+                                &:nth-child(2)   .fa-user-circle{
+                                    position:absolute;
+                                    top: 62px;
+                                }
+
+                                &:nth-child(2){
+                                    margin-top: 20px;
+                                    
+                
+                                }
+
+                                span{
+                                    display: block;
+                                        padding-top: 7px;
+                                        color:#111;
+                                        font-weight: bold;
+                                        
+                                }
+                                
+                                .fa-user-circle {
+                                    position:absolute;
+                                    left:30px;
+                                    top: -5px;
+                                    font-size: 45px;
+                                    border: 2px solid;
+                                    border-color: #e03254;
+                                    border-radius: 50%;
+                                    padding: 3px;
+                                    color: #e03254;
+                                    z-index: 2;
+                                }
+                                }
+                            
+                            }
+                        
+                        }
+                    }
+                
+                    ul {
+                    text-align: center;
+
+                    .picture{
+                        width: 130px;
+                        height: 130px;
+                        
+                    }
+                        
+                        .name {
+                            color:#e03254;
+                            font-size: 14px;
+                        }
+                    
+                        .job-title{
+                            font-weight: bold;
+                            font-size: 17px;
+                            padding-top: 10px;
+                            color:#111;
+                        }
+                        
+            }
+        
+       
+        }
+
     }
 }
