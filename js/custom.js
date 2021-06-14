@@ -23,7 +23,7 @@ getSubMaxHeight();
 
 function getSubMaxHeight() {
     $gnb_li.each(function (index) {
-        var current_ht = $(this).children("ul").height();
+        var current_ht = $(this).find("ul").height();
         ht_max = Math.max(ht_max, current_ht);
     });
 }
@@ -36,7 +36,7 @@ function openSub() {
             width: "100%",
             height: ht_max,
             position: "absolute",
-            top: 70,
+            top: 76,
             left: 0,
             backgroundColor: '#fff',
             zIndex: 2,
