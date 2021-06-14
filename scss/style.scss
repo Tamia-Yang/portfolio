@@ -41,8 +41,8 @@ a{
     z-index: 2;
     width: 100%;
     height: 70px;
-    background: #292931;
-
+    // background: #292931;
+    background-color: #fff;
         .inner{
             width: 1180px;
             margin:0 auto;
@@ -93,7 +93,7 @@ a{
                     display:block; 
                     width:100%; 
                     height:2px;     
-                    background:#fff; 
+                    background:#000; 
                     position:absolute;
                     bottom:0;
                     left:0;
@@ -105,7 +105,7 @@ a{
                     display:block; 
                     width:100%; 
                     height:2px;     
-                    background:#fff; 
+                    background:#000; 
                     position:absolute;
                     top:0;
                     left:0;
@@ -115,7 +115,7 @@ a{
                     display: block;
                     width: 70%;
                     height: 2px;
-                    background:#fff;
+                    background:#000;
                     position:absolute;
                     top:50%;
                     left:0;
@@ -200,7 +200,7 @@ a{
 
                         >a{
                             display: block;
-                            color:white;
+                            color:#EF4136;
                              padding: 0 18px;
                              font-weight: 400;
                              font-size: 14px;
@@ -233,7 +233,7 @@ a{
                                 
 
                                     &:hover, &.on{
-                                        color:#EF4136;; 
+                                        color:#EF4136;
                                       
                                     }
                                 }
@@ -264,7 +264,7 @@ a{
                         padding:6px;
                         font-size: 16px;
                         line-height: 20px;;
-                        color: white;
+                        color: #292931;
                         transition:0.3s;
 
                         &:hover {
