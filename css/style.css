@@ -1442,11 +1442,7 @@ a {
       width: 208px;
       height: 40px;
       padding: 18px 15px;
-      float: left;
-      color: white;
-      font-size: 30px;
-      font-family: 'Roboto';
-      font-weight: normal; }
+      float: left; }
     #header .inner .btnCall {
       display: none;
       width: 24px;
