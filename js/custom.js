@@ -36,11 +36,12 @@ function openSub() {
             width: "100%",
             height: ht_max,
             position: "absolute",
-            top: 76,
+            top: 75,
             left: 0,
             backgroundColor: '#fff',
             zIndex: 2,
             display: 'none'
+
         })
     );
 
