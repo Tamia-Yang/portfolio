@@ -40,7 +40,7 @@ input, a, button {
       font-weight: 800; }
   #department .inner .wrap {
     margin-top: 30px;
-    margin-bottom: 150px;
+    margin-bottom: 130px;
     position: relative; }
     #department .inner .wrap::after {
       content: '';
@@ -94,17 +94,18 @@ input, a, button {
       position: absolute;
       width: 450px;
       left: 0;
-      top: 58%;
-      z-index: 1; }
+      top: 53%;
+      z-index: 1;
+      color: #666; }
     #department .inner .wrap .exterior-bg {
       width: 50%;
       position: absolute;
       background-color: #f2f5f9;
       right: -50px;
-      top: 55%;
+      top: 48%;
       z-index: 1;
       width: 400%;
-      height: 270px; }
+      height: 350px; }
     #department .inner .wrap .exterior {
       width: 55%;
       filter: grayscale(1);
@@ -113,7 +114,7 @@ input, a, button {
       right: 0%;
       z-index: 3; }
     #department .inner .wrap .organize {
-      margin-top: 1500px; }
+      margin-top: 1400px; }
       #department .inner .wrap .organize .ceo {
         position: relative; }
         #department .inner .wrap .organize .ceo::after {
@@ -230,19 +231,19 @@ input, a, button {
             padding: 3px;
             color: #EF4136;
             z-index: 2; }
-    #department .inner .wrap ul {
-      text-align: center; }
-      #department .inner .wrap ul .picture {
-        width: 130px;
-        height: 130px; }
-      #department .inner .wrap ul .name {
-        color: #e03254;
-        font-size: 14px; }
-      #department .inner .wrap ul .job-title {
-        font-weight: bold;
-        font-size: 17px;
-        padding-top: 10px;
-        color: #111; }
+      #department .inner .wrap .organize ul {
+        text-align: center; }
+        #department .inner .wrap .organize ul .picture {
+          width: 130px;
+          height: 130px; }
+        #department .inner .wrap .organize ul .name {
+          color: #e03254;
+          font-size: 14px; }
+        #department .inner .wrap .organize ul .job-title {
+          font-weight: bold;
+          font-size: 17px;
+          padding-top: 10px;
+          color: #111; }
 
 #visual {
   width: 100%;
