@@ -16,7 +16,7 @@
         }
         .wrap   {
             margin-top: 30px;
-            margin-bottom: 130px;
+            margin-bottom: 350px;
             position:relative;
 
             &::after{
@@ -119,10 +119,10 @@
                     z-index: 3;
 
                 }
-                
+              
             .organize {
                 margin-top: 1400px;
-                    
+
                    .ceo {
                         position:relative;
                         top:-115px;
@@ -158,8 +158,6 @@
                           }
                       }
                     }
-      
-        
                     .staff{
                         position: relative;                    
                         top:-82px;
@@ -189,7 +187,6 @@
                             position: relative;
                             margin-top: 30px;
                             
-
                             &::after{
                                 content: '';
                                 display: block;
@@ -293,20 +290,180 @@
                         height: 120px;
                         border-radius: 50%;
                         z-index: 3;
-                        position: relative;
-                        
+                        position: relative;   
                     }
                     .job-title{
                         font-weight: bold;
                         font-size: 13px;
                         padding-top: 17px;
                         color:white;
+                        position:relative;
+    
                     }
                      
                 } 
                     .employee-second{
-                        position: relative;
+                              
+                        .first-line{
+                            position: relative;
 
+                            &::after{
+                                content: '';
+                                display: block;
+                                width:2px;
+                                height: 157px;
+                                background-color: #3a8a91;
+                                position:absolute;
+                                right: 30px;
+                                top:81%;
+                        
+                            }
+                            ul{
+                                margin-top: 30px;
+
+                                &::after{
+                                    content: '';
+                                    display: block;
+                                    width:30px;
+                                    height: 2px;
+                                    background-color: #3a8a91;
+                                    position:absolute;
+                                    right:-30px;
+                                    top:13px;
+                                }
+                                li{
+                                    width: 150px;
+                                    height: 35px;
+                                    z-index: 3;
+                                    margin-bottom: 10px;
+                                    background-color: #64c4d1;
+                                    position:relative;
+
+                                    &::after{
+                                        content: '';
+                                        display: block;
+                                        width:40px;
+                                        height: 2px;
+                                        background-color: #3a8a91;
+                                        position:absolute;
+                                        right:-40px;
+                                        top:13px;  
+                                }
+                            }
+                        }
+                    }
+                        .second-line{
+                            position: relative;
+
+                            &::after{
+                                content: '';
+                                display: block;
+                                width:2px;
+                                height: 110px;
+                                background-color: #3a8a91;
+                                position:absolute;
+                                right: 30px;
+                                top:81%;
+                            }
+
+                            ul{
+                                margin-top: 30px;
+
+                                &::after{
+                                    content: '';
+                                    display: block;
+                                    width:30px;
+                                    height: 2px;
+                                    background-color: #3a8a91;
+                                    position:absolute;
+                                    right:-30px;
+                                    top:13px;
+                                }
+                                li{
+                                    width: 150px;
+                                    height: 35px;
+                                    z-index: 3;
+                                    margin-bottom: 10px;
+                                    background-color: #64c4d1;
+                                    position:relative;
+
+                                    &::after{
+                                        content: '';
+                                        display: block;
+                                        width:40px;
+                                        height: 2px;
+                                        background-color: #3a8a91;
+                                        position:absolute;
+                                        right:-40px;
+                                        top:13px;  
+                                }
+                               
+                                }
+                            }
+                        }
+                        .third-line{
+                            position: relative;
+
+                            &::after{
+                                content: '';
+                                display: block;
+                                width:2px;
+                                height: 245px;
+                                background-color: #3a8a91;
+                                position:absolute;
+                                right: 30px;
+                                top:81%;
+                            }
+                            ul{
+                                margin-top: 30px;
+
+                                &::after{
+                                    content: '';
+                                    display: block;
+                                    width:30px;
+                                    height: 2px;
+                                    background-color: #3a8a91;
+                                    position:absolute;
+                                    right:-30px;
+                                    top:13px;
+                                }
+
+                                li{
+                                    width: 150px;
+                                    height: 35px;
+                                    z-index: 3;
+                                    margin-bottom: 10px;
+                                    background-color: #64c4d1;
+                                    position:relative;
+
+                                    &::after{
+                                        content: '';
+                                        display: block;
+                                        width:40px;
+                                        height: 2px;
+                                        background-color: #3a8a91;
+                                        position:absolute;
+                                        right:-40px;
+                                        top:13px;  
+                                    }
+                                }
+                            }
+                            
+                        }
+                        .fa-user-circle {
+                            position:absolute;
+                            left:-30px;
+                            top: -6px;
+                            font-size: 45px;
+                            border: 2px solid;
+                            border-color: #3a8a91;
+                            border-radius: 50%;
+                            padding: 3px;
+                            color: #3a8a91;
+                            z-index: 4;
+
+                        }
+             
                         >ul{
                             margin-top: 22px;
                             padding-right: 60px;
@@ -322,7 +479,7 @@
                                 margin-left: 85px;
                             }
 
-                                li{
+                                >li{
                                     width: 160px;
                                     height: 35px;
                                     line-height: 35px;
@@ -342,28 +499,11 @@
                                         top:-4px;
                                         z-index: 3;
                                     }
-
-                                    .fa-user-circle {
-                                        position:absolute;
-                                        left:-30px;
-                                        top: -6px;
-                                        font-size: 45px;
-                                        border: 2px solid;
-                                        border-color: #3a8a91;
-                                        border-radius: 50%;
-                                        padding: 3px;
-                                        color: #3a8a91;
-                                        z-index: 4;
-
-                                    }
                                                                 
                                 }
-                        
                             }
                     }
             }
-        
         }
-
     }
 }
