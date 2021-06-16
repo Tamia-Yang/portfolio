@@ -42,10 +42,6 @@ input, a, button {
     margin-top: 30px;
     margin-bottom: 350px;
     position: relative; }
-    #department .inner .wrap::after {
-      content: '';
-      display: block;
-      clear: both; }
     #department .inner .wrap h1 {
       font-size: 40px;
       opacity: 60%; }
@@ -94,7 +90,7 @@ input, a, button {
       position: absolute;
       width: 450px;
       left: 0;
-      top: 53%;
+      top: 62%;
       z-index: 1;
       color: #666; }
     #department .inner .wrap .exterior-bg {
@@ -102,7 +98,7 @@ input, a, button {
       position: absolute;
       background-color: #f2f5f9;
       right: -50px;
-      top: 48%;
+      top: 57%;
       z-index: 1;
       width: 400%;
       height: 350px; }
@@ -110,11 +106,11 @@ input, a, button {
       width: 55%;
       filter: grayscale(1);
       position: absolute;
-      top: 45%;
+      top: 53%;
       right: 0%;
       z-index: 3; }
     #department .inner .wrap .organize {
-      margin-top: 1400px; }
+      margin-top: 1450px; }
       #department .inner .wrap .organize .ceo {
         position: relative;
         top: -115px; }
@@ -404,6 +400,29 @@ input, a, button {
             left: -28px;
             top: -4px;
             z-index: 3; }
+  #department .inner #team {
+    padding-top: 120px;
+    text-align: center;
+    width: 100%; }
+    #department .inner #team::after {
+      content: '';
+      display: block;
+      clear: both; }
+    #department .inner #team > h4 {
+      padding: 20px 0;
+      color: #01a6d8;
+      float: left;
+      font-size: 40px; }
+      #department .inner #team > h4 span {
+        color: black;
+        font-size: 40px; }
+    #department .inner #team img {
+      margin-top: 90px;
+      padding: 30px;
+      float: left;
+      width: calc((100% / 4) - 90px);
+      border-radius: 50%;
+      box-sizing: border-box; }
 
 #visual {
   width: 100%;
