@@ -440,7 +440,7 @@ input, a, button {
             width: 150px;
             height: 150px;
             left: -90px;
-            top: -140px;
+            top: -145px;
             background: linear-gradient(to bottom, #0066ff 0%, #00ccff 100%);
             z-index: 1;
             border-radius: 50%; }
@@ -457,8 +457,12 @@ input, a, button {
         float: left;
         width: 200px;
         margin-right: 80px; }
+        #department .inner #team .team-info ul li em {
+          color: #01a6d8;
+          font-style: normal; }
         #department .inner #team .team-info ul li h1 {
-          font-size: 24px; }
+          font-size: 22px;
+          padding-top: 55px; }
         #department .inner #team .team-info ul li h4 {
           font-size: 16px;
           color: #aaa; }
