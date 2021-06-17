@@ -402,27 +402,68 @@ input, a, button {
             z-index: 3; }
   #department .inner #team {
     padding-top: 120px;
-    text-align: center;
-    width: 100%; }
-    #department .inner #team::after {
-      content: '';
-      display: block;
-      clear: both; }
+    width: 100%;
+    position: relative; }
     #department .inner #team > h4 {
       padding: 20px 0;
       color: #01a6d8;
-      float: left;
+      text-align: left;
       font-size: 40px; }
       #department .inner #team > h4 span {
         color: black;
         font-size: 40px; }
-    #department .inner #team img {
-      margin-top: 90px;
-      padding: 30px;
-      float: left;
-      width: calc((100% / 4) - 90px);
-      border-radius: 50%;
-      box-sizing: border-box; }
+    #department .inner #team .face {
+      margin-bottom: 500px;
+      position: relative;
+      left: 50%;
+      transform: translate(-50%); }
+      #department .inner #team .face ul {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center; }
+        #department .inner #team .face ul > li img {
+          margin: 0 40px;
+          margin-top: 60px;
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+          box-sizing: border-box;
+          position: relative;
+          z-index: 2; }
+        #department .inner #team .face ul > li span {
+          display: block; }
+        #department .inner #team .face ul > li ul > li {
+          position: relative; }
+          #department .inner #team .face ul > li ul > li .shadow {
+            position: absolute;
+            bottom: -10px;
+            width: 150px;
+            height: 150px;
+            left: -90px;
+            top: -140px;
+            background: linear-gradient(to bottom, #0066ff 0%, #00ccff 100%);
+            z-index: 1;
+            border-radius: 50%; }
+    #department .inner #team .team-info {
+      text-align: center;
+      position: absolute;
+      top: 400px;
+      left: 60px; }
+      #department .inner #team .team-info::after {
+        content: '';
+        display: block;
+        clear: both; }
+      #department .inner #team .team-info ul {
+        float: left;
+        width: 200px;
+        margin-right: 80px; }
+        #department .inner #team .team-info ul li h1 {
+          font-size: 24px; }
+        #department .inner #team .team-info ul li h4 {
+          font-size: 16px;
+          color: #aaa; }
+        #department .inner #team .team-info ul li p {
+          margin-top: 20px; }
 
 #visual {
   width: 100%;
