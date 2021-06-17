@@ -606,6 +606,23 @@
                         p{
                             margin-top: 20px;
                         }
+                        .fa-linkedin-in, .fa-facebook-f, .fa-instagram{
+                       
+                          margin: 0 6px;
+                          margin-top: 10px;
+                           padding: 7px;
+                           width: 35px;
+                           height: 35px;
+                           box-sizing: border-box;
+                           border: 1px solid #bbb;
+                           border-radius: 50%;
+                           color:#bbb;
+
+                           &:hover{
+                               color:#0066ff ;
+                               border: 1px solid #0066ff ;
+                           }
+                        }
                     }
                 }
             }

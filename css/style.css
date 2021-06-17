@@ -468,6 +468,19 @@ input, a, button {
           color: #aaa; }
         #department .inner #team .team-info ul li p {
           margin-top: 20px; }
+        #department .inner #team .team-info ul li .fa-linkedin-in, #department .inner #team .team-info ul li .fa-facebook-f, #department .inner #team .team-info ul li .fa-instagram {
+          margin: 0 6px;
+          margin-top: 10px;
+          padding: 7px;
+          width: 35px;
+          height: 35px;
+          box-sizing: border-box;
+          border: 1px solid #bbb;
+          border-radius: 50%;
+          color: #bbb; }
+          #department .inner #team .team-info ul li .fa-linkedin-in:hover, #department .inner #team .team-info ul li .fa-facebook-f:hover, #department .inner #team .team-info ul li .fa-instagram:hover {
+            color: #0066ff;
+            border: 1px solid #0066ff; }
 
 #visual {
   width: 100%;
