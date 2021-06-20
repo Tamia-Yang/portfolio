@@ -28,6 +28,11 @@
             text-align: center;
             margin-top: 50px;
 
+        
+            .error {
+                background: #ffeafe;
+                border: 1px solid #ff24ff;
+            }   
     
             .main-text{
                 background-color: #f8f8f8;
@@ -130,6 +135,10 @@
             padding: 30px;
             width: 100%;
             box-sizing: border-box;
+
+            .error{
+                color: red;
+            }
     
 
             p{
@@ -170,6 +179,14 @@
                     td{
                         background-color: #fff;
                         border-bottom:1px solid #ddd;
+
+                        p{
+                            font: 12px/1 "맑은 고딕";
+                            color: hotpink;
+                            display: inline-block;
+                            padding-bottom: 0;
+                            display: none;
+                            }
                         
 
                         #sample4_jibunAddress{
@@ -285,7 +302,7 @@
             margin-bottom: 100px;
             margin-top: 50px;
  
-            button{
+            input{
                 width: 60px;
                 height: 30px;
                 font-size:  12px;

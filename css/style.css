@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap");
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&display=swap");
@@ -472,8 +473,8 @@ input, a, button {
           margin: 0 6px;
           margin-top: 10px;
           padding: 7px;
-          width: 35px;
-          height: 35px;
+          width: 33px;
+          height: 33px;
           box-sizing: border-box;
           border: 1px solid #bbb;
           border-radius: 50%;
@@ -504,6 +505,9 @@ input, a, button {
   #members .inner .wrap {
     text-align: center;
     margin-top: 50px; }
+    #members .inner .wrap .error {
+      background: #ffeafe;
+      border: 1px solid #ff24ff; }
     #members .inner .wrap .main-text {
       background-color: #f8f8f8;
       border: 1px solid #ddd;
@@ -575,6 +579,8 @@ input, a, button {
     padding: 30px;
     width: 100%;
     box-sizing: border-box; }
+    #register .inner .wrap .error {
+      color: red; }
     #register .inner .wrap p {
       font-size: 15px;
       font-weight: 800;
@@ -604,6 +610,12 @@ input, a, button {
         #register .inner .wrap .content table td {
           background-color: #fff;
           border-bottom: 1px solid #ddd; }
+          #register .inner .wrap .content table td p {
+            font: 12px/1 "맑은 고딕";
+            color: hotpink;
+            display: inline-block;
+            padding-bottom: 0;
+            display: none; }
           #register .inner .wrap .content table td #sample4_jibunAddress {
             margin-bottom: 7px; }
           #register .inner .wrap .content table td #sample4_postcode {
@@ -680,14 +692,14 @@ input, a, button {
     text-align: center;
     margin-bottom: 100px;
     margin-top: 50px; }
-    #register .inner .button button {
+    #register .inner .button input {
       width: 60px;
       height: 30px;
       font-size: 12px;
       background-color: #fff;
       outline: none;
       border: 1px solid #666; }
-      #register .inner .button button:hover {
+      #register .inner .button input:hover {
         color: white;
         background-color: #24315c; }
 
@@ -1448,7 +1460,7 @@ figure .text-content {
             vertical-align: middle;
             padding: 2px;
             padding-right: 15px; }
-        #tab #fnq .inner .wrap dl dd {
+        #tab #fnq .inner .wrap dl > dd {
           width: 100%;
           padding: 20px;
           box-sizing: border-box;
@@ -1456,7 +1468,7 @@ figure .text-content {
           font: 13px/4 'Roboto';
           color: #666;
           display: none; }
-          #tab #fnq .inner .wrap dl dd:nth-of-type(1) {
+          #tab #fnq .inner .wrap dl > dd.on {
             display: block; }
       #tab #fnq .inner #QnA {
         font-family: 'Nanum Gothic Coding', monospace;

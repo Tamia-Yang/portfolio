@@ -734,7 +734,7 @@
                         }
                         
                     }
-                    dd{
+                    >dd{
                         width: 100%;
                         padding: 20px;
                         box-sizing: border-box;
@@ -743,7 +743,7 @@
                         color: #666;
                         display: none; 
 
-                        &:nth-of-type(1){
+                        &.on {
                             display: block;
                         }
                     
@@ -751,7 +751,6 @@
                 }
             }
     
-        
             #QnA {
 
                 font-family: 'Nanum Gothic Coding', monospace;
@@ -801,26 +800,14 @@
                                 padding-top: 15px;
                                 float: right;
                             }
-                        
-                    
+
                         }
 
                    }
-         
-       
+
              }
-        
-        
-        
-        
-        
-        
-     
+
         }
 
-
-        
-     
-     
     }   
 }

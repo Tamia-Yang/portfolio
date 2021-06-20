@@ -1,55 +1,125 @@
-// 도로명 주소 찾기
-function sample4_execDaumPostcode() {
-    new daum.Postcode({
-        oncomplete: function (data) {
-            // 팝업에서 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분.
 
-            // 도로명 주소의 노출 규칙에 따라 주소를 표시한다.
-            // 내려오는 변수가 값이 없는 경우엔 공백('')값을 가지므로, 이를 참고하여 분기 한다.
-            var roadAddr = data.roadAddress; // 도로명 주소 변수
-            var extraRoadAddr = ''; // 참고 항목 변수
+$("input[type=submit]").on("click", function (e) {
+    if (!isTxt("userid", 5)) e.preventDefault();
+    if (!isPwd("pwd1", "pwd2", 5)) e.preventDefault();
+    if (!isTxt("comments", 20)) e.preventDefault();
+    if (!isCheck("hobby")) e.preventDefault();
+    if (!isCheck("gender")) e.preventDefault();
+    if (!isTxt("email1")) e.preventDefault();
+    if (!isSelect("email2")) e.preventDefault();
+});
 
-            // 법정동명이 있을 경우 추가한다. (법정리는 제외)
-            // 법정동의 경우 마지막 문자가 "동/로/가"로 끝난다.
-            if (data.bname !== '' && /[동|로|가]$/g.test(data.bname)) {
-                extraRoadAddr += data.bname;
-            }
-            // 건물명이 있고, 공동주택일 경우 추가한다.
-            if (data.buildingName !== '' && data.apartment === 'Y') {
-                extraRoadAddr += (extraRoadAddr !== '' ? ', ' + data.buildingName : data.buildingName);
-            }
-            // 표시할 참고항목이 있을 경우, 괄호까지 추가한 최종 문자열을 만든다.
-            if (extraRoadAddr !== '') {
-                extraRoadAddr = ' (' + extraRoadAddr + ')';
-            }
+//텍스트 인증 함수 정의
+function isTxt(name, len) {
+    if (len == undefined) len = 5;
+    var txt = $("[name=" + name + "]").val();
+    var msg = $("[name=" + name + "]").attr("placeholder");
 
-            // 우편번호와 주소 정보를 해당 필드에 넣는다.
-            document.getElementById('sample4_postcode').value = data.zonecode;
-            document.getElementById("sample4_roadAddress").value = roadAddr;
-            document.getElementById("sample4_jibunAddress").value = data.jibunAddress;
-
-            // 참고항목 문자열이 있을 경우 해당 필드에 넣는다.
-            if (roadAddr !== '') {
-                document.getElementById("sample4_extraAddress").value = extraRoadAddr;
-            } else {
-                document.getElementById("sample4_extraAddress").value = '';
-            }
-
-            var guideTextBox = document.getElementById("guide");
-            // 사용자가 '선택 안함'을 클릭한 경우, 예상 주소라는 표시를 해준다.
-            if (data.autoRoadAddress) {
-                var expRoadAddr = data.autoRoadAddress + extraRoadAddr;
-                guideTextBox.innerHTML = '(예상 도로명 주소 : ' + expRoadAddr + ')';
-                guideTextBox.style.display = 'block';
-
-            } else if (data.autoJibunAddress) {
-                var expJibunAddr = data.autoJibunAddress;
-                guideTextBox.innerHTML = '(예상 지번 주소 : ' + expJibunAddr + ')';
-                guideTextBox.style.display = 'block';
-            } else {
-                guideTextBox.innerHTML = '';
-                guideTextBox.style.display = 'none';
-            }
+    if (txt == "") {
+        alert(msg);
+        $("[name=" + name + "]").addClass("error");
+        return false;
+    } else {
+        if (txt.length < len) {
+            alert("최소 " + len + "글자 이상 입력하세요!");
+            $("[name=" + name + "]").addClass("error");
+            return false;
+        } else {
+            $("[name=" + name + "]").removeClass("error");
+            return true;
         }
-    }).open();
+    }
+}
+
+//비밀번호 인증 함수 정의
+function isPwd(name1, name2, len) {
+    var $pwd1 = $("input[name=" + name1 + "]");
+    var $pwd2 = $("input[name=" + name2 + "]");
+    var pwd1 = $pwd1.val();
+    var pwd2 = $pwd2.val();
+    var isConfirm = false;
+    var i = 0;
+
+    var num = /[0-9]/;
+    var eng = /[a-zA-Z]/;
+    var spc = /[~!@#$%^&*()_+\]\[-]/;
+
+    if (pwd1 === pwd2) {
+
+        //비번이 len의 갯수보다 큰지 확인
+        if (pwd1.length >= len) {
+            i++;
+        } else {
+            alert("비밀번호는 5자리 이상 입력하세요.");
+        }
+
+        //비번에 숫자가 포함되어 있는지 확인
+        if (num.test(pwd1)) {
+            i++;
+        } else {
+            alert("비밀번호에 숫자를 포함하세요.");
+        }
+
+        //문자가 포함되어 있는지 확인
+        if (eng.test(pwd1)) {
+            i++;
+        } else {
+            alert("비밀번호에 문자를 포함하세요.");
+        }
+
+        //특수문자가 포함되어 있는지 확인
+        if (spc.test(pwd1)) {
+            i++;
+        } else {
+            alert("비밀번호에 특수문자를 포함하세요.");
+        }
+
+        if (i === 4) {
+            $pwd1.removeClass("error");
+            $pwd2.removeClass("error");
+            isConfirm = true;
+            return isConfirm;
+        } else {
+            $pwd1.addClass("error");
+            $pwd2.addClass("error");
+            return isConfirm;
+        }
+
+
+    } else {
+        alert("두 개의 비밀번호를 동일하게 입력하세요.")
+        $pwd1.addClass("error");
+        $pwd2.addClass("error");
+        return isConfirm;
+    }
+
+
+}
+
+//check 인증 함수 정의
+function isCheck(name) {
+    var isCheck = $("input[name=" + name + "]").is(':checked');
+
+    if (isCheck) {
+        $("input[name=" + name + "]").parent().find("p").hide();
+        return true;
+    } else {
+        $("input[name=" + name + "]").parent().find("p").show();
+        return false;
+    }
+}
+
+//select 인증 함수 정의
+function isSelect(name) {
+    var sel = $("select[name=" + name + "]").children("option:selected").val();
+    var msg = $("select[name=" + name + "]").children("option").eq(0).text();
+
+    if (sel == "") {
+        alert(msg);
+        $("select[name=" + name + "]").addClass("error");
+        return false;
+    } else {
+        $("select[name=" + name + "]").removeClass("error");
+        return true;
+    }
 }
