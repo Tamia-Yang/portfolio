@@ -28,6 +28,25 @@ input, a, button {
   top: -9999px;
   opacity: 0; }
 
+#department figure #sub-visual {
+  width: 100%;
+  height: 400px;
+  background: url(../img/visual_8.jpg) no-repeat center/cover;
+  text-align: center;
+  position: relative;
+  z-index: 1; }
+#department figure .sub-text-content {
+  position: absolute;
+  left: 50%;
+  top: 280px;
+  line-height: 35px;
+  transform: translateX(-50%);
+  text-align: center;
+  color: white; }
+  #department figure .sub-text-content p {
+    font-size: 22px; }
+    #department figure .sub-text-content p span {
+      font-size: 45px; }
 #department .inner {
   width: 1180px;
   margin: 0px auto; }
@@ -471,14 +490,15 @@ input, a, button {
             color: #0066ff;
             border: 1px solid #0066ff; }
 
-figure #sub_visual {
+figure #sub-visual {
   width: 100%;
   height: 400px;
-  background: url(../img/visual_2.jpg) no-repeat center/cover;
+  background: url(../img/visual_3.jpg) no-repeat center/cover;
   text-align: center;
   position: relative;
-  z-index: 1; }
-figure .text-content {
+  z-index: 1;
+  background-attachment: fixed; }
+figure .sub-text-content {
   position: absolute;
   left: 50%;
   top: 280px;
@@ -486,9 +506,9 @@ figure .text-content {
   transform: translateX(-50%);
   text-align: center;
   color: white; }
-  figure .text-content p {
+  figure .sub-text-content p {
     font-size: 22px; }
-    figure .text-content p span {
+    figure .sub-text-content p span {
       font-size: 45px; }
 
 #members .inner {
@@ -802,26 +822,6 @@ body figure .text-content {
         font: 14px/1.4 "arial";
         color: #888; }
 
-figure #sub_visual {
-  width: 100%;
-  height: 400px;
-  background: url(../img/visual_3.jpg) no-repeat center/cover;
-  text-align: center;
-  position: relative;
-  z-index: 1; }
-figure .text-content {
-  position: absolute;
-  left: 50%;
-  top: 280px;
-  line-height: 35px;
-  transform: translateX(-50%);
-  text-align: center;
-  color: white; }
-  figure .text-content p {
-    font-size: 22px; }
-    figure .text-content p span {
-      font-size: 45px; }
-
 .loading {
   position: fixed;
   top: 50%;
@@ -838,6 +838,25 @@ figure .text-content {
   width: 100%;
   box-sizing: border-box;
   background-color: #eee; }
+  .content figure #sub-visual {
+    width: 100%;
+    height: 400px;
+    background: url(../img/visual_7.jpg) no-repeat center/cover;
+    text-align: center;
+    position: relative;
+    z-index: 1; }
+  .content figure .sub-text-content {
+    position: absolute;
+    left: 50%;
+    top: 280px;
+    line-height: 35px;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white; }
+    .content figure .sub-text-content p {
+      font-size: 22px; }
+      .content figure .sub-text-content p span {
+        font-size: 45px; }
   .content .inner {
     width: 1180px;
     margin: 0px auto; }
@@ -1552,6 +1571,24 @@ figure .text-content {
               padding-top: 15px;
               float: right; }
 
+#contact figure #sub-visual {
+  background: url(../img/visual_6.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; }
+#contact figure .sub-text-content {
+  position: absolute;
+  left: 50%;
+  top: 280px;
+  line-height: 35px;
+  transform: translateX(-50%);
+  text-align: center;
+  color: white; }
+  #contact figure .sub-text-content p {
+    font-size: 22px; }
+    #contact figure .sub-text-content p span {
+      font-size: 45px; }
 #contact .inner {
   width: 1180px;
   margin: 0 auto;
