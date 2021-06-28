@@ -1,4 +1,33 @@
+figure{
 
+    #sub_visual {
+        width: 100%;
+        height:400px;
+        background:url(../img/visual_6.jpg) no-repeat  center/cover;
+        text-align: center;
+        position:relative;
+        z-index: 1;
+
+        }
+        
+        .text-content{
+            position: absolute;
+            left:50%;
+            top:280px;
+            line-height:35px;
+            transform: translateX(-50%);
+            text-align: center;
+            color: white;
+
+            p{
+                font-size: 22px;
+                span{
+                    font-size: 45px;
+                }
+            }
+
+        }           
+}
 #tab{
     position: relative;
     z-index:2;

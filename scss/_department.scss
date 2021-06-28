@@ -204,13 +204,13 @@
                                 height: 30px;
                             }
                             .describe {
-                                width: 170px;
-                                height: 55px;
+                                width: 180px;
+                                height: 60px;
                                 background-color: #3a8a91;
                                 position:absolute;
                                 left: 50%;
                                 transform: translate(-50%);
-                                bottom: -25%;
+                                bottom: -33%;
                             }
 
                         }    
@@ -534,8 +534,8 @@
                             img {
                                 margin: 0 40px;
                                 margin-top: 60px;
-                                width: 150px;
-                                height: 150px;
+                                width: 130px;
+                                height: 130px;
                                 border-radius: 50%;
                                 box-sizing: border-box;
                                 position: relative;
@@ -545,27 +545,6 @@
                                   display: block;
                               }  
                                   
-                            ul{
-                        
-                                >li{
-                                    position:relative;
-
-                                    
-                                    
-                                    .shadow {
-                                        position:absolute;
-                                        bottom:-10px;
-                                        width: 150px;
-                                        height: 150px;
-                                        left: -90px;
-                                        top:-145px;
-                                        background: linear-gradient(to bottom, #0066ff 0%, #00ccff 100%);
-                                        z-index: 1;
-                                        border-radius: 50%;
-                                    }
-                                  
-                                }
-                            }
 
                         }
                 }
@@ -596,7 +575,7 @@
                         }
                         h1{
                             font-size: 22px;
-                            padding-top: 55px;
+                            padding-top: 10px;
                         }
                         h4{
                             font-size: 16px;
@@ -604,15 +583,15 @@
                         }
 
                         p{
-                            margin-top: 20px;
+                            margin-top: 15px;
                         }
                         .fa-linkedin-in, .fa-facebook-f, .fa-instagram{
                        
                           margin: 0 6px;
                           margin-top: 10px;
                            padding: 7px;
-                           width: 33px;
-                           height: 33px;
+                           width: 28px;
+                           height: 28px;
                            box-sizing: border-box;
                            border: 1px solid #bbb;
                            border-radius: 50%;

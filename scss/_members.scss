@@ -1,11 +1,34 @@
 
- #visual {
-            width: 100%;
-            height:500px;
-            overflow: hidden;
-            background:url("../img/visual_8.jpg") no-repeat  center/cover;
+figure{
+
+    #sub_visual {
+        width: 100%;
+        height:400px;
+        background:url(../img/visual_2.jpg) no-repeat  center/cover;
+        text-align: center;
+        position:relative;
+        z-index: 1;
+
+        }
+        
+        .text-content{
+            position: absolute;
+            left:50%;
+            top:280px;
+            line-height:35px;
+            transform: translateX(-50%);
+            text-align: center;
+            color: white;
+
+            p{
+                font-size: 22px;
+                span{
+                    font-size: 45px;
+                }
             }
-            
+
+        }           
+}
 #members{
     .inner {
         width:  1180px;
@@ -38,7 +61,6 @@
                 background-color: #f8f8f8;
                 border:1px solid #ddd;
                 padding: 20px;
-             
                 padding-bottom: 60px;
 
                 #first-answer, #second-yes{
@@ -78,6 +100,8 @@
                     padding-bottom:3px;
                     font-size: 12px;
                     color:#555;
+                    padding: 20px;
+                    box-sizing: border-box;
                 }
                 p, .consent{
                     float: left;

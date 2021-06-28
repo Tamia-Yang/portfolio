@@ -41,6 +41,7 @@
         //처음 로딩시 type을 interest로 지정해서 getList함수 호출      
         this.getList({
             type: "interest"
+
         });
 
         //타이틀 클릭시 다시 초기화면 보이기
@@ -186,16 +187,16 @@
                                 })
                             )
                         )
-                        .append(
-                            $("<p>").text(text)
-                        )
-                        .append(
-                            $("<div class='profile'>")
-                                .append(
-                                    $("<img>").attr({ src: "https://www.flickr.com/buddyicons/" + data.owner + ".jpg" }),
-                                    $("<span>").text(data.owner)
-                                )
-                        )
+                    // .append(
+                    //     $("<p>").text(text)
+                    // )
+                    // .append(
+                    //     $("<div class='profile'>")
+                    //         .append(
+                    //             $("<img>").attr({ src: "https://www.flickr.com/buddyicons/" + data.owner + ".jpg" }),
+                    //             $("<span>").text(data.owner)
+                    //         )
+                    // )
 
                 )
             )
