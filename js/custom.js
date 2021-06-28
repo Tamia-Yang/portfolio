@@ -36,7 +36,7 @@ function openSub() {
             width: "100%",
             height: ht_max,
             position: "absolute",
-            top: 75,
+            top: 70,
             left: 0,
             backgroundColor: '#fff',
             zIndex: 2,

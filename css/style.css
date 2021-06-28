@@ -1793,7 +1793,6 @@ a {
       display: block;
       clear: both; }
     #header .inner .logo img {
-      background-size: 240px 40px;
       width: 208px;
       height: 40px;
       padding: 18px 15px;
@@ -1910,7 +1909,7 @@ a {
         #header .inner #gnb > li > ul {
           position: absolute;
           width: 100%;
-          top: 25px;
+          top: 23px;
           left: 0;
           z-index: 2;
           display: none; }
