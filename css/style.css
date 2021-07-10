@@ -1998,7 +1998,7 @@ p {
       display: block;
       clear: both; }
     #main .inner .picture h1 {
-      font-size: 30px;
+      font-size: 34px;
       margin-bottom: 30px;
       color: var(--blue); }
     #main .inner .picture img {
@@ -2088,29 +2088,30 @@ p {
         font-size: 10px;
         position: absolute;
         left: 10%;
-        margin-top: 25px;
-        padding: 8px 20px; }
-    #main .inner .blue .text {
-      width: 88%;
-      margin-top: 50px;
-      text-align: left; }
-      #main .inner .blue .text h1 {
-        margin-bottom: 15px;
-        font-size: 19px; }
-      #main .inner .blue .text p {
-        font-size: 14px; }
+        margin-top: 22px;
+        padding: 6px 14px; }
+      #main .inner .blue .blue-text .text {
+        width: 88%;
+        margin-top: 40px;
+        text-align: left; }
+        #main .inner .blue .blue-text .text h1 {
+          margin-bottom: 15px;
+          font-size: 19px; }
+        #main .inner .blue .blue-text .text p {
+          font-size: 12px; }
     #main .inner .blue img {
       position: absolute;
-      left: 90%;
-      top: -20%;
-      width: 500px;
+      right: 17%;
+      bottom: -95%;
+      width: 550px;
       height: 380px;
       z-index: 1; }
     #main .inner .blue .blue-memo {
-      width: 100px;
-      height: 100px;
+      width: 90px;
+      height: 90px;
       position: absolute;
-      right: 0;
+      right: 17%;
+      bottom: -80%;
       z-index: 4;
       padding: 10px;
       font-size: 11px;

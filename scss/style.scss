@@ -362,7 +362,7 @@ p{
                 clear: both;
             }
             h1{
-                font-size: 30px;
+                font-size: 34px;
                 margin-bottom: 30px;
                 color:var(--blue);
             }
@@ -407,10 +407,6 @@ p{
                     }
                 }
             }
-        
-        
-
-          
             
         }
         .middle-picture{
@@ -485,59 +481,56 @@ p{
                 padding: 40px;
                 box-sizing: border-box;
 
-
-                    .in-blue{
-                        color: white;
-                        background-color: var(--point);
-                        border: 0;
-                        font-size: 10px;
-                        position:absolute;
-                        left:10%;
-                        margin-top: 25px;
-                        padding: 8px 20px;
-
-                    }
-          
-                
-            }
-
-            .text{
-                width: 88%;
-                margin-top: 50px;
-                text-align: left;
-
-                h1{
-                    margin-bottom: 15px;
-                    font-size: 19px;
-                }
-                p{
-                    font-size: 14px;
-                } 
-            
-            }
-            
-                img{
-                    position:absolute;
-                    left: 90%;
-                    top: -20%;
-                    width: 500px;
-                    height: 380px;
-                    z-index: 1;
-                }
-
-                .blue-memo{
-                    width: 100px;
-                    height: 100px;
-                    position:absolute;
-                    right: 0;
-                    z-index: 4;
-                    padding: 10px;
-                    font-size: 11px;
-                    background-color:  var(--point);
-                    border: 0;
+                .in-blue{
                     color: white;
-                    
+                    background-color: var(--point);
+                    border: 0;
+                    font-size: 10px;
+                    position:absolute;
+                    left:10%;
+                    margin-top: 22px;
+                    padding: 6px 14px;
                 }
+
+                .text{
+                    width: 88%;
+                    margin-top: 40px;
+                    text-align: left;
+                   
+                    h1{
+                        margin-bottom: 15px;
+                        font-size: 19px;
+                    }
+                    p{
+                        font-size: 12px;
+                    } 
+                   
+                }
+          
+             }
+             img{
+                position:absolute;
+                right:17%;
+                bottom:-95%;
+                width: 550px;
+                height: 380px;
+                z-index: 1;
+            }
+
+            .blue-memo{
+                width: 90px;
+                height: 90px;
+                position:absolute;
+                right: 17%;
+                bottom:-80%;
+                z-index: 4;
+                padding: 10px;
+                font-size: 11px;
+                background-color:  var(--point);
+                border: 0;
+                color: white;
+                
+            } 
         }
     }
 }
