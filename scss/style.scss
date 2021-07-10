@@ -16,6 +16,8 @@
     --point:#f45762;
 
     --blue:#2f3946;
+
+    --sky:#2181b6;
 }
 
 body{
@@ -298,6 +300,28 @@ p{
             margin: 0 auto;
             background-color: #fff;
 
+            h1{
+                text-align: center;
+                font-size: 38px;
+                color: var(--blue);
+             
+            }
+            p{
+                margin: 20px auto;
+                width: 50%;
+                text-align: center;
+                font-size: 16px;
+                
+            }
+            span{
+                display: block;
+                margin: 30px auto;
+                margin-bottom: 60px;
+                width: 100px;
+                height: 2px;
+                background-color:var(--sky);
+            }
+
             &::after{
                 content: '';
                 display: block;
@@ -329,8 +353,7 @@ p{
                   
                 }
 
-                button{
-                    
+                button{           
                     border:1px solid var(--point);
                     background-color: var(--point);
                     margin: 14px;
@@ -362,7 +385,7 @@ p{
                 clear: both;
             }
             h1{
-                font-size: 34px;
+                font-size: 38px;
                 margin-bottom: 30px;
                 color:var(--blue);
             }
@@ -380,7 +403,7 @@ p{
                 
                 .text-box{
                     float:left;
-                    margin-bottom: 40px;
+                    margin-bottom: 30px;
                     border-bottom: 2px solid #ddd;
 
                     &:last-child{
