@@ -31,7 +31,7 @@ input, a, button {
 #department {
   width: 100%;
   overflow: hidden; }
-  #department figure #sub-visual {
+  #department figure #sub_visual {
     width: 100%;
     height: 400px;
     background: url(../img/visual_15.jpg) no-repeat center/cover;
@@ -493,7 +493,7 @@ input, a, button {
               color: #0066ff;
               border: 1px solid #0066ff; }
 
-figure #sub-visual {
+#members figure #sub_visual {
   width: 100%;
   height: 400px;
   background: url(../img/visual_1.jpg) no-repeat center/cover;
@@ -501,19 +501,18 @@ figure #sub-visual {
   position: relative;
   z-index: 1;
   background-attachment: fixed; }
-figure .sub-text-content {
-  position: absolute;
-  left: 50%;
-  top: 280px;
-  line-height: 35px;
-  transform: translateX(-50%);
-  text-align: center;
-  color: white; }
-  figure .sub-text-content p {
-    font-size: 22px; }
-    figure .sub-text-content p span {
-      font-size: 45px; }
-
+  #members figure #sub_visual .sub-text-content {
+    position: absolute;
+    left: 50%;
+    top: 280px;
+    line-height: 35px;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white; }
+    #members figure #sub_visual .sub-text-content p {
+      font-size: 22px; }
+      #members figure #sub_visual .sub-text-content p span {
+        font-size: 45px; }
 #members .inner {
   width: 1180px;
   margin: 0px auto;
@@ -730,14 +729,14 @@ figure .sub-text-content {
         color: white;
         background-color: #24315c; }
 
-body figure #sub_visual {
+#video figure #sub-visual {
   width: 100%;
-  height: 500px;
+  height: 400px;
   background: url("../img/visual_9.jpg") no-repeat center/cover;
   text-align: center;
   position: relative;
   z-index: 1; }
-body figure .text-content {
+#video figure .text-content {
   position: absolute;
   left: 50%;
   top: 350px;
@@ -745,9 +744,9 @@ body figure .text-content {
   transform: translateX(-50%);
   text-align: center;
   color: white; }
-  body figure .text-content p {
+  #video figure .text-content p {
     font-size: 22px; }
-    body figure .text-content p span {
+    #video figure .text-content p span {
       font-size: 45px; }
 
 #vidGallery {
@@ -844,7 +843,7 @@ body figure .text-content {
   .content figure #sub-visual {
     width: 100%;
     height: 400px;
-    background: url(../img/visual_5.jpg) no-repeat center/cover;
+    background: url(../img/visual_8.jpg) no-repeat center/cover;
     text-align: center;
     position: relative;
     z-index: 1; }
@@ -1006,25 +1005,13 @@ body figure .text-content {
       .content .inner #gallery ul li.item-sizer {
         width: 50%;
         opacity: 0; } }
-figure #sub_visual {
+#community figure #sub_visual {
   width: 100%;
   height: 400px;
-  background: url(../img/visual_6.jpg) no-repeat center/cover;
+  background: url(../img/visual_18.jpg) no-repeat center/cover;
   text-align: center;
   position: relative;
   z-index: 1; }
-figure .text-content {
-  position: absolute;
-  left: 50%;
-  top: 280px;
-  line-height: 35px;
-  transform: translateX(-50%);
-  text-align: center;
-  color: white; }
-  figure .text-content p {
-    font-size: 22px; }
-    figure .text-content p span {
-      font-size: 45px; }
 
 #tab {
   position: relative;
@@ -1579,7 +1566,8 @@ figure .text-content {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  height: 400px; }
 #contact figure .sub-text-content {
   position: absolute;
   left: 50%;
