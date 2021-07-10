@@ -470,6 +470,30 @@ p{
         .blue{
             margin: 130px auto;
             text-align: center;
+            position:relative;
+
+            img{
+                position:absolute;
+                right:13%;
+                bottom:-15%;
+                width: 550px;
+                height: 380px;
+                z-index: 1;
+            }
+
+            .blue-memo{
+                width: 90px;
+                height: 90px;
+                position:absolute;
+                right: 13%;
+                bottom:40%;
+                z-index: 4;
+                padding: 10px;
+                font-size: 11px;
+                background-color:  var(--point);
+                border: 0;
+                color: white;  
+            } 
             
             .blue-text{
                 width: 450px;
@@ -480,6 +504,8 @@ p{
                 left: 5%;
                 padding: 40px;
                 box-sizing: border-box;
+
+             
 
                 .in-blue{
                     color: white;
@@ -504,33 +530,8 @@ p{
                     p{
                         font-size: 12px;
                     } 
-                   
                 }
-          
-             }
-             img{
-                position:absolute;
-                right:17%;
-                bottom:-95%;
-                width: 550px;
-                height: 380px;
-                z-index: 1;
-            }
-
-            .blue-memo{
-                width: 90px;
-                height: 90px;
-                position:absolute;
-                right: 17%;
-                bottom:-80%;
-                z-index: 4;
-                padding: 10px;
-                font-size: 11px;
-                background-color:  var(--point);
-                border: 0;
-                color: white;
-                
-            } 
+             }  
         }
     }
 }

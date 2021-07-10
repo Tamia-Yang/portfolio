@@ -2071,7 +2071,27 @@ p {
         font-size: 11px; }
   #main .inner .blue {
     margin: 130px auto;
-    text-align: center; }
+    text-align: center;
+    position: relative; }
+    #main .inner .blue img {
+      position: absolute;
+      right: 13%;
+      bottom: -15%;
+      width: 550px;
+      height: 380px;
+      z-index: 1; }
+    #main .inner .blue .blue-memo {
+      width: 90px;
+      height: 90px;
+      position: absolute;
+      right: 13%;
+      bottom: 40%;
+      z-index: 4;
+      padding: 10px;
+      font-size: 11px;
+      background-color: var(--point);
+      border: 0;
+      color: white; }
     #main .inner .blue .blue-text {
       width: 450px;
       height: 300px;
@@ -2099,25 +2119,6 @@ p {
           font-size: 19px; }
         #main .inner .blue .blue-text .text p {
           font-size: 12px; }
-    #main .inner .blue img {
-      position: absolute;
-      right: 17%;
-      bottom: -95%;
-      width: 550px;
-      height: 380px;
-      z-index: 1; }
-    #main .inner .blue .blue-memo {
-      width: 90px;
-      height: 90px;
-      position: absolute;
-      right: 17%;
-      bottom: -80%;
-      z-index: 4;
-      padding: 10px;
-      font-size: 11px;
-      background-color: var(--point);
-      border: 0;
-      color: white; }
 
 #footer {
   width: 100%;
