@@ -12,17 +12,22 @@
 @import 'community';
 @import 'contact';
 
-
+:root{
+    --point:#f45762;
+}
 
 body{
     color:#555;
     // font-family: 'Roboto', sans-serif;
-    font-family: 'Lora', serif;
+    font-family: 'Roboto', serif;
     width:100%;
     font-size: 15px;
 }
 a{
     color:#555;
+}
+p{
+    line-height: 1.5;
 }
 #skipNavi li a{   
     display:block; 
@@ -276,35 +281,166 @@ a{
        
     }
 }
-figure{
 
-    #visual {
-        width: 100%;
-        height:500px;
-        background:url("../img/visual_8.jpg") no-repeat  center/cover;
-        text-align: center;
-        position:relative;
-        z-index: 1;
+//Main
+#main{
 
+    .inner{
+        margin: 0 auto;
+        width: 1180px;
+        background-color: #f5f5f5;
+
+        .three-info{
+            padding-top: 150px;
+
+            &::after{
+                content: '';
+                display: block;
+                clear: both;
+            }
+    
+            .first, .second, .third{
+                text-align:  center;
+                width: calc((100%  / 3 ) - 10%);
+                float: left;
+                padding: 5%;
+
+                .fa-chalkboard-teacher{
+                    font-size: 55px;
+                    background-color: #fff;
+                    padding: 28px;
+                    border-radius: 50%;
+ 
+                }
+                h2{
+                    font-size: 16px;
+                    font-weight: 900;
+                    margin: 15px;
+                  
+                }
+
+                button{
+                    border: 0;
+                    background-color: var(--point);
+                    color: white;
+                    font-size: 11px;
+                    padding: 8px 32px;
+                    margin: 10px;
+
+                    &:focus{
+                        outline: none;
+                    }
+                    
+                }
+            }
         }
-        .text-content{
-            position: absolute;
-            left:50%;
-            top:350px;
-            line-height:35px;
-            transform: translateX(-50%);
-            text-align: center;
-            color: white;
+        .picture{
+            width: 60%;
+            margin: 70px auto;
 
-            p{
-                font-size: 22px;
-                span{
-                    font-size: 45px;
+            &::after{
+                content: '';
+                display: block;
+                clear: both;
+            }
+
+
+            .left-picture{
+                float: left;
+                width:calc((100% / 2) - 40px);
+                padding-left: 55px;
+
+                h3{
+                    margin-bottom: 10px;
+                }
+                p{
+                    width:77%;
+                    font-size: 13px;
+                    margin-bottom: 80px;
+
+                }
+                small{
+                    display: block;
+                    padding-top: 10px;
+                    padding-right: 10px;
+                    text-align: right;
                 }
             }
 
-        }           
+            img{
+                width: 300px;
+                height: 400px;
+            }
+            .right-picture{
+                float: left;
+                width:calc((100% / 2) - 40px);
+
+                img{
+                    width: 280px;
+                    height: 300px;
+                    
+                }
+                
+                h3{
+                    margin-top: 130px;
+                    font-weight: 900;
+                    margin-bottom: 10px;
+
+                }
+            
+                p{
+                    width:77%;
+                    font-size: 13px;
+
+
+                }
+            }
+        }
+        .middle-picture{
+            width: 80%;
+            margin: 120px auto;
+
+            .orange-left-image{
+                img{
+                    width: 300px;
+                }
+            }
+
+            .text-box{
+                width: 250px;
+                font-size: 13px;
+                text-align: center;
+            
+                background-color: #fff;
+                border:2px solid #ddd;
+                padding: 25px;
+                
+                small {
+                    color: var(--point);
+
+                }
+                h3{
+                    margin-top: 10px;
+                    margin-bottom: 15px;
+
+                }
+                span {
+                    display: block;
+                    padding: 25px;
+                    font-size: 11px;
+
+                }
+            }
+        }
+
+    }
 }
+
+
+
+
+
+// Footer
 
 #footer {
     width: 100%;

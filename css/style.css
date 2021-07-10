@@ -1748,14 +1748,20 @@ input, a, button {
       #contact .inner #bottom-info .text .bottom-right h1 {
         padding-bottom: 14px; }
 
+:root {
+  --point:#f45762; }
+
 body {
   color: #555;
-  font-family: 'Lora', serif;
+  font-family: 'Roboto', serif;
   width: 100%;
   font-size: 15px; }
 
 a {
   color: #555; }
+
+p {
+  line-height: 1.5; }
 
 #skipNavi li a {
   display: block;
@@ -1937,25 +1943,98 @@ a {
         #header .inner .social a:hover {
           color: #EF4136; }
 
-figure #visual {
-  width: 100%;
-  height: 500px;
-  background: url("../img/visual_8.jpg") no-repeat center/cover;
-  text-align: center;
-  position: relative;
-  z-index: 1; }
-figure .text-content {
-  position: absolute;
-  left: 50%;
-  top: 350px;
-  line-height: 35px;
-  transform: translateX(-50%);
-  text-align: center;
-  color: white; }
-  figure .text-content p {
-    font-size: 22px; }
-    figure .text-content p span {
-      font-size: 45px; }
+#main .inner {
+  margin: 0 auto;
+  width: 1180px;
+  background-color: #f5f5f5; }
+  #main .inner .three-info {
+    padding-top: 150px; }
+    #main .inner .three-info::after {
+      content: '';
+      display: block;
+      clear: both; }
+    #main .inner .three-info .first, #main .inner .three-info .second, #main .inner .three-info .third {
+      text-align: center;
+      width: calc((100%  / 3 ) - 10%);
+      float: left;
+      padding: 5%; }
+      #main .inner .three-info .first .fa-chalkboard-teacher, #main .inner .three-info .second .fa-chalkboard-teacher, #main .inner .three-info .third .fa-chalkboard-teacher {
+        font-size: 55px;
+        background-color: #fff;
+        padding: 28px;
+        border-radius: 50%; }
+      #main .inner .three-info .first h2, #main .inner .three-info .second h2, #main .inner .three-info .third h2 {
+        font-size: 16px;
+        font-weight: 900;
+        margin: 15px; }
+      #main .inner .three-info .first button, #main .inner .three-info .second button, #main .inner .three-info .third button {
+        border: 0;
+        background-color: var(--point);
+        color: white;
+        font-size: 11px;
+        padding: 8px 32px;
+        margin: 10px; }
+        #main .inner .three-info .first button:focus, #main .inner .three-info .second button:focus, #main .inner .three-info .third button:focus {
+          outline: none; }
+  #main .inner .picture {
+    width: 60%;
+    margin: 70px auto; }
+    #main .inner .picture::after {
+      content: '';
+      display: block;
+      clear: both; }
+    #main .inner .picture .left-picture {
+      float: left;
+      width: calc((100% / 2) - 40px);
+      padding-left: 55px; }
+      #main .inner .picture .left-picture h3 {
+        margin-bottom: 10px; }
+      #main .inner .picture .left-picture p {
+        width: 77%;
+        font-size: 13px;
+        margin-bottom: 80px; }
+      #main .inner .picture .left-picture small {
+        display: block;
+        padding-top: 10px;
+        padding-right: 10px;
+        text-align: right; }
+    #main .inner .picture img {
+      width: 300px;
+      height: 400px; }
+    #main .inner .picture .right-picture {
+      float: left;
+      width: calc((100% / 2) - 40px); }
+      #main .inner .picture .right-picture img {
+        width: 280px;
+        height: 300px; }
+      #main .inner .picture .right-picture h3 {
+        margin-top: 130px;
+        font-weight: 900;
+        margin-bottom: 10px; }
+      #main .inner .picture .right-picture p {
+        width: 77%;
+        font-size: 13px; }
+  #main .inner .middle-picture {
+    width: 80%;
+    margin: 120px auto; }
+    #main .inner .middle-picture .orange-left-image img {
+      width: 300px; }
+    #main .inner .middle-picture .text-box {
+      width: 250px;
+      font-size: 13px;
+      text-align: center;
+      background-color: #fff;
+      border: 2px solid #ddd;
+      padding: 25px; }
+      #main .inner .middle-picture .text-box small {
+        color: var(--point); }
+      #main .inner .middle-picture .text-box h3 {
+        margin-top: 10px;
+        margin-bottom: 15px; }
+      #main .inner .middle-picture .text-box span {
+        display: block;
+        padding: 25px;
+        font-size: 11px; }
 
 #footer {
   width: 100%;
