@@ -1960,7 +1960,7 @@ p {
       color: var(--blue); }
     #main .inner .info p {
       margin: 20px auto;
-      width: 50%;
+      width: 80%;
       text-align: center;
       font-size: 16px; }
     #main .inner .info span {
@@ -1976,12 +1976,11 @@ p {
       clear: both; }
     #main .inner .info .first, #main .inner .info .second, #main .inner .info .third, #main .inner .info .four {
       text-align: center;
-      width: 260px;
+      width: calc(100% /4);
       float: left;
-      padding: 0 15px;
-      font-size: 12px; }
+      font-size: 13px; }
       #main .inner .info .first .fa-desktop, #main .inner .info .first .fa-chart-line, #main .inner .info .first .fa-balance-scale-right, #main .inner .info .first .fa-cogs, #main .inner .info .second .fa-desktop, #main .inner .info .second .fa-chart-line, #main .inner .info .second .fa-balance-scale-right, #main .inner .info .second .fa-cogs, #main .inner .info .third .fa-desktop, #main .inner .info .third .fa-chart-line, #main .inner .info .third .fa-balance-scale-right, #main .inner .info .third .fa-cogs, #main .inner .info .four .fa-desktop, #main .inner .info .four .fa-chart-line, #main .inner .info .four .fa-balance-scale-right, #main .inner .info .four .fa-cogs {
-        font-size: 32px;
+        font-size: 33px;
         background-color: #fff;
         border: 3px solid #ccc;
         padding: 18px;
@@ -1995,7 +1994,6 @@ p {
       #main .inner .info .first button, #main .inner .info .second button, #main .inner .info .third button, #main .inner .info .four button {
         border: 1px solid var(--point);
         background-color: var(--point);
-        margin: 14px;
         margin-bottom: 80px;
         border-radius: 20px;
         font-weight: 700; }
