@@ -1779,10 +1779,12 @@ p {
   z-index: 10; }
 
 #header {
-  z-index: 2;
+  z-index: 10;
   width: 100%;
   height: 70px;
-  background-color: #fff; }
+  position: fixed;
+  background-color: #fff;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1); }
   #header .inner {
     width: 1180px;
     margin: 0 auto;
@@ -2134,6 +2136,54 @@ p {
           font-size: 19px; }
         #main .inner .blue .blue-text .text p {
           font-size: 12px; }
+#main .human::after {
+  content: '';
+  display: block;
+  clear: both; }
+#main .human::before {
+  content: '';
+  display: block;
+  background-color: var(--point);
+  width: 70px;
+  height: 3px;
+  position: absolute;
+  left: 50%; }
+#main .human img {
+  float: left;
+  width: 50%; }
+#main .human .introduce {
+  float: right;
+  width: 50%; }
+  #main .human .introduce h1 {
+    font-size: 36px;
+    letter-spacing: 2px;
+    color: var(--blue);
+    padding-top: 15px; }
+  #main .human .introduce p {
+    width: 85%;
+    padding: 20px 0; }
+#main .human .intro-text {
+  width: 100%; }
+  #main .human .intro-text h3 {
+    font-size: 15px;
+    color: var(--blue); }
+  #main .human .intro-text .fa-paint-brush, #main .human .intro-text .fa-graduation-cap {
+    color: var(--point);
+    font-size: 36px;
+    margin: 15px 0; }
+  #main .human .intro-text .left {
+    background-color: #fff;
+    padding: 24px;
+    float: left;
+    width: 45%;
+    box-sizing: border-box; }
+  #main .human .intro-text .right {
+    background-color: #fff;
+    padding: 24px;
+    float: left;
+    width: 45%;
+    box-sizing: border-box;
+    margin-left: 20px; }
 
 #footer {
   width: 100%;
