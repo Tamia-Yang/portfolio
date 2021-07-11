@@ -1983,14 +1983,30 @@ p {
       text-align: center;
       width: calc(100% /4);
       float: left;
-      font-size: 13px; }
+      font-size: 13px;
+      position: relative; }
+      #main .inner .info .first::after, #main .inner .info .second::after, #main .inner .info .third::after, #main .inner .info .four::after {
+        content: '';
+        display: block;
+        width: 82px;
+        height: 82px;
+        border: 2px dashed #999;
+        position: absolute;
+        z-index: 1;
+        background-color: transparent;
+        border-radius: 50%;
+        top: -6px;
+        left: 104px; }
       #main .inner .info .first .fa-desktop, #main .inner .info .first .fa-chart-line, #main .inner .info .first .fa-balance-scale-right, #main .inner .info .first .fa-cogs, #main .inner .info .second .fa-desktop, #main .inner .info .second .fa-chart-line, #main .inner .info .second .fa-balance-scale-right, #main .inner .info .second .fa-cogs, #main .inner .info .third .fa-desktop, #main .inner .info .third .fa-chart-line, #main .inner .info .third .fa-balance-scale-right, #main .inner .info .third .fa-cogs, #main .inner .info .four .fa-desktop, #main .inner .info .four .fa-chart-line, #main .inner .info .four .fa-balance-scale-right, #main .inner .info .four .fa-cogs {
-        font-size: 33px;
+        width: 33px;
+        height: 33px;
         background-color: #fff;
         border: 3px solid #ccc;
         padding: 18px;
         border-radius: 50%;
-        color: var(--point); }
+        color: var(--point);
+        z-index: 2;
+        position: relative; }
       #main .inner .info .first h2, #main .inner .info .second h2, #main .inner .info .third h2, #main .inner .info .four h2 {
         font-size: 14px;
         font-weight: 900;

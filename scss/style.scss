@@ -338,16 +338,41 @@ p{
                 width: calc(100% /4);
                 float: left;
                 font-size: 13px;
+
+                position:relative;
+
+                &::after{
+                    content: '';
+                    display: block;
+                    width: 82px;
+                    height: 82px;
+                    border:2px dashed #999;
+                    position:absolute;
+                    z-index: 1;
+                    background-color: transparent;
+                    border-radius: 50%;
+                    top:-6px;
+                    left:104px;
+
+                }
         
                 .fa-desktop, .fa-chart-line, .fa-balance-scale-right, .fa-cogs{
-                    font-size: 33px;
+                 
+                    width: 33px;
+                    height:33px;
                     background-color: #fff;
                     border:3px solid #ccc;
                     padding: 18px;
                     border-radius: 50%;
                     color:var(--point);
+                    z-index: 2;
+                    position:relative;
+
+                 
+                   
  
                 }
+               
                 h2{
                     font-size: 14px;
                     font-weight: 900;
@@ -355,7 +380,7 @@ p{
                     color:var(--point);
                   
                 }
-
+          
                 button{           
                     border:1px solid var(--point);
                     background-color: var(--point);
