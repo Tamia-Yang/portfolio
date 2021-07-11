@@ -641,18 +641,40 @@ p{
              font-size: 18px;
              text-align: center;
          }
-         .count{
-             margin-top: 52px;
-            text-align: center;
+       .counter-wrap {
+           width: 400px;
+           height: 128px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin:50px  auto;
+
+            .number{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                padding: 0 60px;
+                color: white;
+                border-right: 1px solid #888;
+
+                &:last-child{
+                    border-right: none;
+                }
+           
+                .counter{
+                    font-size: 30px;
+                    
+                }
+
+                span{
+                    padding-top: 20px;
+                    color: #999;
+                }
+       }
+            }
          
-                 li{
-                    display: inline-block;
-                    font-family: 'Lora';
-                     color: white;
-                     padding: 0 66px;
-                     font-size: 60px;
-                 }
-            
          }
          .desc {
              text-align: center;
@@ -688,11 +710,7 @@ p{
      .companylogo{
         text-align: center;
         transform: scale(0.8);
- 
-     
-
-    
-    
+  
      }
      .wrap {
         width: 1180px;
@@ -764,7 +782,7 @@ p{
                 box-sizing: border-box;
                 margin-left: 20px;
             }
-        }
+       
     }
 
 }

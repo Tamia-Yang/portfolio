@@ -2195,47 +2195,64 @@ p {
     color: white;
     font-size: 18px;
     text-align: center; }
-  #main .bar .count {
-    margin-top: 52px;
-    text-align: center; }
-    #main .bar .count li {
-      display: inline-block;
-      font-family: 'Lora';
+  #main .bar .counter-wrap {
+    width: 400px;
+    height: 128px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px  auto; }
+    #main .bar .counter-wrap .number {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 60px;
       color: white;
-      padding: 0 66px;
-      font-size: 60px; }
-  #main .bar .desc {
-    text-align: center; }
-    #main .bar .desc li {
-      display: inline-block;
-      font-family: 'Lora';
-      color: #999;
-      padding: 0px 72px;
-      font-size: 18px;
+      border-right: 1px solid #888; }
+      #main .bar .counter-wrap .number:last-child {
+        border-right: none; }
+      #main .bar .counter-wrap .number .counter {
+        font-size: 30px; }
+      #main .bar .counter-wrap .number span {
+        padding-top: 20px;
+        color: #999; }
+#main .desc {
+  text-align: center; }
+  #main .desc li {
+    display: inline-block;
+    font-family: 'Lora';
+    color: #999;
+    padding: 0px 72px;
+    font-size: 18px;
+    position: relative;
+    top: -100px; }
+    #main .desc li::before {
+      content: '';
+      display: block;
+      width: 2px;
+      height: 120px;
+      background-color: #888;
       position: relative;
-      top: -100px; }
-      #main .bar .desc li::before {
-        content: '';
-        display: block;
-        width: 2px;
-        height: 120px;
-        background-color: #888;
-        position: relative;
-        top: 40px;
-        left: 140px; }
-#main .companylogo {
+      top: 40px;
+      left: 140px; }
+
+.companylogo {
   text-align: center;
   transform: scale(0.8); }
-#main .wrap {
+
+.wrap {
   width: 1180px;
   margin: 0 auto; }
-#main .human {
+
+.human {
   padding-top: 100px; }
-  #main .human::after {
+  .human::after {
     content: '';
     display: block;
     clear: both; }
-  #main .human::before {
+  .human::before {
     content: '';
     display: block;
     background-color: var(--point);
@@ -2243,36 +2260,36 @@ p {
     height: 3px;
     position: absolute;
     left: 50%; }
-  #main .human img {
+  .human img {
     float: left;
     width: 50%; }
-  #main .human .introduce {
+  .human .introduce {
     float: right;
     width: 50%; }
-    #main .human .introduce h1 {
+    .human .introduce h1 {
       font-size: 36px;
       letter-spacing: 2px;
       color: var(--blue);
       padding-top: 15px; }
-    #main .human .introduce p {
+    .human .introduce p {
       width: 85%;
       padding: 20px 0; }
-  #main .human .intro-text {
+  .human .intro-text {
     width: 100%; }
-    #main .human .intro-text h3 {
+    .human .intro-text h3 {
       font-size: 15px;
       color: var(--blue); }
-    #main .human .intro-text .fa-paint-brush, #main .human .intro-text .fa-graduation-cap {
+    .human .intro-text .fa-paint-brush, .human .intro-text .fa-graduation-cap {
       color: var(--point);
       font-size: 36px;
       margin: 15px 0; }
-    #main .human .intro-text .left {
+    .human .intro-text .left {
       background-color: #fff;
       padding: 24px;
       float: left;
       width: 45%;
       box-sizing: border-box; }
-    #main .human .intro-text .right {
+    .human .intro-text .right {
       background-color: #fff;
       padding: 24px;
       float: left;

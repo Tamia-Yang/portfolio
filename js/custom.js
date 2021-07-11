@@ -94,47 +94,27 @@ btnCall.onclick = function () {
 //menuMo end
 
 //Number Count start
-const loadText = document.querySelector(".loading-text")
-let load = 1900;
-var int = setInterval(countNumber, 50)
-function countNumber() {
-    load++;
-    if (load > 2001) {
-        clearInterval(int);
-    }
-    loadText.innerHTML = `${load}`
-}
 
-const prize = document.querySelector(".prize")
-let num = 0;
-var prizeWin = setInterval(countNum, 60)
-function countNum() {
-    num++;
-    if (num > 76) {
-        clearInterval(prizeWin);
-    }
-    prize.innerHTML = `${num}`
+const counters = document.querySelectorAll('.counter')
 
-}
 
-const client = document.querySelector(".client")
-let clientnum = 0;
-var clientCount = setInterval(thirdCount, 50)
-function thirdCount() {
-    clientnum++;
-    if (clientnum > 99) {
-        clearInterval(clientCount);
-    }
-    client.innerHTML = `${clientnum}` + "+"
-}
+counters.forEach(counter => {
+    counter.innerText = '0'
 
-const lastNum = document.querySelector(".lastNum")
-let cowoker = 100;
-var cowokerNum = setInterval(fourNum, 35)
-function fourNum() {
-    cowoker++;
-    if (cowoker > 253) {
-        clearInterval(cowokerNum);
-    }
-    lastNum.innerHTML = `${cowoker}`
-}
+    const
+        updateCounter = () => {
+            const target = +counter.getAttribute("data-link");
+            const c = +counter.innerText
+            const increment = target / 400
+
+            if (c < target) {
+                counter.innerText = `${Math.ceil(c + increment)}`
+                setTimeout(updateCounter, 1)
+            } else {
+                counter.innerText = target
+            }
+        }
+
+    updateCounter()
+})
+
