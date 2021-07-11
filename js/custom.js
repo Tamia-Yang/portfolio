@@ -107,7 +107,7 @@ function countNumber() {
 
 const prize = document.querySelector(".prize")
 let num = 0;
-var prizeWin = setInterval(countNum, 50)
+var prizeWin = setInterval(countNum, 60)
 function countNum() {
     num++;
     if (num > 76) {
@@ -130,7 +130,7 @@ function thirdCount() {
 
 const lastNum = document.querySelector(".lastNum")
 let cowoker = 100;
-var cowokerNum = setInterval(fourNum, 30)
+var cowokerNum = setInterval(fourNum, 35)
 function fourNum() {
     cowoker++;
     if (cowoker > 253) {

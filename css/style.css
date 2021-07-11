@@ -2223,6 +2223,9 @@ p {
         position: relative;
         top: 40px;
         left: 140px; }
+#main .companylogo {
+  text-align: center;
+  transform: scale(0.8); }
 #main .wrap {
   width: 1180px;
   margin: 0 auto; }
