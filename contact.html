@@ -14,8 +14,6 @@
         src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a630f6741997902f3f118b95d1ad5779"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script defer src="js/contact.js"></script>
-    <script defer src="js/custom.js"></script>
-
     <title>Vera | contact</title>
 </head>
 
@@ -139,11 +137,14 @@
                             <legend>to contact form</legend>
                             <input type="text" placeholder="Name">
                             <input type="email" name="contact-email" id=" contact-email" placeholder="Email Address">
-                            <textarea name="contact-area" id="contact-area" cols="50" rows="10"
-                                placeholder="Message"></textarea>
+                            <textarea name="area" id="area" cols="50" rows="10" placeholder="Message" maxlength="250"
+                                autofocus></textarea>
+
                         </fieldset>
+
                     </form>
-                    <button type="submit">SEND</button>
+
+                    <button type="submit" value="submit">SEND</button>
                 </div>
                 <div class="right">
                     <h4>Phone</h4>

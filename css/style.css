@@ -1625,7 +1625,8 @@ input, a, button {
       background-color: #eee;
       border: none;
       margin-top: 10px;
-      outline: none; }
+      outline: none;
+      resize: none; }
       #contact .inner .wrap textarea::placeholder {
         color: #999;
         padding: 10px;
@@ -2061,12 +2062,15 @@ p {
       width: 330px;
       height: 300px;
       z-index: 1;
-      margin-left: 280px; }
+      margin-left: 280px;
+      background: url(../img/visual_6.jpg) no-repeat center center/cover; }
     #main .inner .middle-picture .orange-right-image {
       float: left;
       width: 180px;
       height: 300px;
-      margin-left: 25px; }
+      margin-left: 25px;
+      background: url(../img/visual_3.jpg) no-repeat center center/cover;
+      filter: grayscale(1); }
     #main .inner .middle-picture .text-box {
       width: 200px;
       font-size: 13px;
