@@ -494,10 +494,36 @@ p{
                 height: 300px;
                 margin-left: 25px;
                 background: url(../img/visual_3.jpg)no-repeat center center/cover;
-                filter: grayscale(1);
+                position:relative;
+         
 
             }
+            .right-btn{
+                background-color: var(--point);
+                border:1px solid var(--point);
+                outline: none;
+         
+                position:absolute;
+                bottom: 10%;
+               left:50%;
+               transform: translateX(-50%);
 
+               &:hover{
+                   background-color: #fff;
+               }
+               &:hover a{
+                   color:#333;
+               }
+                
+            
+              a{
+                color: white; 
+                font-size: 12px; 
+                padding: 4px 20px;
+                display: block;
+              }
+
+            }
             .text-box{
                 width: 200px;
                 font-size: 13px;
@@ -596,7 +622,7 @@ p{
         }
     }
     .bar{
-        background-image: url(../img/bg-4.jpg);
+        background-image: url(../img/legalor-bg1.jpg);
          background-repeat: no-repeat;
          background-size: cover;
          background-position: center center;
