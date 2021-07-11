@@ -93,41 +93,48 @@ btnCall.onclick = function () {
 };
 //menuMo end
 
-
-//#fnq text underline 
-$("#fnq .text li").on("click", function () {
-    $(this).addClass("on");
-    $(this).siblings().removeClass("on");
-
-
-})
-//F&Q slide menu start
-var $frame = $("#fnq .wrap dl");
-var $btns = $frame.find("dt");
-var $boxs = $frame.find("dd");
-var speed = 500;
-var enableClick = true;
-
-$btns.on("click", function (e) {
-    e.preventDefault();
-    activation(this);
-});
-
-function activation(self) {
-    var isOn = $(self).hasClass("on");
-
-    $btns.removeClass("on");
-    $boxs.slideUp(speed);
-
-    if (isOn) {
-        $(self).removeClass("on");
-        $(self).stop().next().slideUp(speed, function () {
-            enableClick = true;
-        });
-    } else {
-        $(self).addClass("on");
-        $(self).stop().next().slideDown(speed, function () {
-            enableClick = true;
-        });
+//Number Count start
+const loadText = document.querySelector(".loading-text")
+let load = 1900;
+var int = setInterval(countNumber, 50)
+function countNumber() {
+    load++;
+    if (load > 2001) {
+        clearInterval(int);
     }
+    loadText.innerHTML = `${load}`
+}
+
+const prize = document.querySelector(".prize")
+let num = 0;
+var prizeWin = setInterval(countNum, 50)
+function countNum() {
+    num++;
+    if (num > 76) {
+        clearInterval(prizeWin);
+    }
+    prize.innerHTML = `${num}`
+
+}
+
+const client = document.querySelector(".client")
+let clientnum = 0;
+var clientCount = setInterval(thirdCount, 50)
+function thirdCount() {
+    clientnum++;
+    if (clientnum > 99) {
+        clearInterval(clientCount);
+    }
+    client.innerHTML = `${clientnum}` + "+"
+}
+
+const lastNum = document.querySelector(".lastNum")
+let cowoker = 100;
+var cowokerNum = setInterval(fourNum, 30)
+function fourNum() {
+    cowoker++;
+    if (cowoker > 253) {
+        clearInterval(cowokerNum);
+    }
+    lastNum.innerHTML = `${cowoker}`
 }

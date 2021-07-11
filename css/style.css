@@ -1963,7 +1963,8 @@ p {
       font-size: 38px;
       color: var(--blue); }
     #main .inner .info p {
-      margin: 20px auto;
+      margin: 10px auto;
+      margin-bottom: 20px;
       width: 80%;
       text-align: center;
       font-size: 16px; }
@@ -2003,6 +2004,10 @@ p {
         font-weight: 700; }
         #main .inner .info .first button:focus, #main .inner .info .second button:focus, #main .inner .info .third button:focus, #main .inner .info .four button:focus {
           outline: none; }
+        #main .inner .info .first button:hover, #main .inner .info .second button:hover, #main .inner .info .third button:hover, #main .inner .info .four button:hover {
+          background-color: #fff; }
+        #main .inner .info .first button:hover a, #main .inner .info .second button:hover a, #main .inner .info .third button:hover a, #main .inner .info .four button:hover a {
+          color: #555; }
         #main .inner .info .first button a, #main .inner .info .second button a, #main .inner .info .third button a, #main .inner .info .four button a {
           display: block;
           padding: 6px 20px;
@@ -2148,10 +2153,11 @@ p {
   background-position: center center;
   height: 430px; }
   #main .bar h1 {
-    font-size: 36px;
+    font-size: 42px;
     color: white;
     text-align: center;
-    padding: 40px 0; }
+    padding: 30px 0;
+    font-family: 'Lora'; }
   #main .bar p {
     color: white;
     font-size: 18px;
@@ -2164,14 +2170,26 @@ p {
       font-family: 'Lora';
       color: white;
       padding: 0 66px;
-      font-size: 60px;
-      border-right: 1px solid #999; }
-      #main .bar .count li:last-child {
-        border-right: none; }
-      #main .bar .count li p {
-        font-size: 16px;
-        padding-top: 20px;
-        color: #ddd; }
+      font-size: 60px; }
+  #main .bar .desc {
+    text-align: center; }
+    #main .bar .desc li {
+      display: inline-block;
+      font-family: 'Lora';
+      color: #999;
+      padding: 0px 72px;
+      font-size: 18px;
+      position: relative;
+      top: -100px; }
+      #main .bar .desc li::before {
+        content: '';
+        display: block;
+        width: 2px;
+        height: 120px;
+        background-color: #888;
+        position: relative;
+        top: 40px;
+        left: 140px; }
 #main .wrap {
   width: 1180px;
   margin: 0 auto; }

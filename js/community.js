@@ -1,28 +1,38 @@
-var $frame = $("#fnq .inner .wrap");
-var $btns = $frame.find("dt");
+
+
+//#fnq text underline 
+$("#fnq .text li").on("click", function () {
+    $(this).addClass("on");
+    $(this).siblings().removeClass("on");
+
+
+})
+//F&Q slide menu start
+var $frames = $("#fnq .wrap dl");
+var $btns = $frames.find("dt");
+var $boxs = $frames.find("dd");
 var speed = 500;
 var enableClick = true;
 
 $btns.on("click", function (e) {
     e.preventDefault();
-    if (enableClick) {
-        activation(this);
-        enableClick = false;
-    }
-
+    activation(this);
 });
 
-function activation(el) {
-    var isOn = $(el).hasClass("on");
+function activation(self) {
+    var isOn = $(self).hasClass("on");
+
+    $btns.removeClass("on");
+    $boxs.slideUp(speed);
 
     if (isOn) {
-        $(el).siblings().removeClass("on");
-        $(el).next("dd").slideUp(speed, function () {
+        $(self).removeClass("on");
+        $(self).stop().next().slideUp(speed, function () {
             enableClick = true;
         });
     } else {
-        $(el).addClass("on");
-        $(el).next("dd").slideDown(speed, function () {
+        $(self).addClass("on");
+        $(self).stop().next().slideDown(speed, function () {
             enableClick = true;
         });
     }
