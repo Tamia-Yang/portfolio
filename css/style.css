@@ -2078,20 +2078,61 @@ p {
       content: '';
       display: block;
       clear: both; }
-    #main .inner .middle-picture .orange-left-image {
+    #main .inner .middle-picture .left {
       float: left;
       width: 330px;
       height: 300px;
       z-index: 1;
       margin-left: 280px;
-      background: url(../img/visual_6.jpg) no-repeat center center/cover; }
-    #main .inner .middle-picture .orange-right-image {
+      background: url(../img/visual_6.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      transition: 0.4s;
+      position: relative; }
+      #main .inner .middle-picture .left:hover::before {
+        opacity: 1; }
+      #main .inner .middle-picture .left:hover::after {
+        transform: scale(1.2); }
+      #main .inner .middle-picture .left::before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(45deg, rgba(173, 216, 230, 0.8), rgba(238, 130, 238, 0.7));
+        opacity: 0;
+        transition: all 0.5s; }
+        #main .inner .middle-picture .left::before:hover::after {
+          transform: scale(1.3); }
+    #main .inner .middle-picture .right {
       float: left;
       width: 180px;
       height: 300px;
       margin-left: 25px;
-      background: url(../img/visual_3.jpg) no-repeat center center/cover;
+      background: url(../img/visual_3.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      transition: 0.4s;
       position: relative; }
+      #main .inner .middle-picture .right:hover::before {
+        opacity: 1; }
+      #main .inner .middle-picture .right:hover::after {
+        transform: scale(1.2); }
+      #main .inner .middle-picture .right::before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(45deg, rgba(173, 216, 230, 0.8), rgba(238, 130, 238, 0.7));
+        opacity: 0;
+        transition: all 0.5s; }
     #main .inner .middle-picture .right-btn {
       background-color: var(--point);
       border: 1px solid var(--point);
