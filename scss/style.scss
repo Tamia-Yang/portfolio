@@ -492,13 +492,10 @@ p{
                     transition: 0.4s;
                     position:relative;
 
-                    &:hover::before{
-                        opacity:1;
-                    }
                     &:hover::after {
                         transform:scale(1.2); 
                     }
-             
+
                     &::before{
                         content:''; 
                         display:block; 
@@ -511,14 +508,12 @@ p{
                         opacity:0;
                          transition:all 0.5s; 
                         
-
-                     
-                        &:hover::after{
-                            transform: scale(1.3);
-                        }
                     }
-                 
- 
+              
+                    &:hover::before{
+                        opacity:1;
+                    }
+                
             }
 
             .right{
@@ -539,6 +534,10 @@ p{
 
                 &:hover::after {
                     transform:scale(1.2); 
+                }
+
+                &::after {
+                    transform: scale(1.2);
                 }
 
                 &::before{
@@ -616,6 +615,16 @@ p{
             margin: 130px auto;
             text-align: center;
             position:relative;
+            
+
+            &::after {
+                content:''; display:block; width:100%; height:100%; 
+                position:absolute; top:0; left:0; 
+                background-repeat: no-repeat;
+                background-size:cover; 
+                background-position:center; 
+                transform:scale(1);  transition:all 1s; 
+            }
 
             img{
                 position:absolute;
