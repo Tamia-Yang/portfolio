@@ -2451,19 +2451,62 @@ p {
       font-size: 13px;
       position: relative; }
       body #main .inner .info .first::after, body #main .inner .info .second::after, body #main .inner .info .third::after, body #main .inner .info .four::after {
-        width: calc((100% /4) +20px);
+        content: '';
+        display: block;
+        width: 82px;
+        height: 82px;
+        border: 2px dashed #999;
+        position: absolute;
+        z-index: 1;
+        background-color: transparent;
+        border-radius: 50%;
         top: -6px;
-        left: 83px; }
+        left: 104px; }
+      body #main .inner .info .first .fa-desktop, body #main .inner .info .first .fa-chart-line, body #main .inner .info .first .fa-balance-scale-right, body #main .inner .info .first .fa-cogs, body #main .inner .info .second .fa-desktop, body #main .inner .info .second .fa-chart-line, body #main .inner .info .second .fa-balance-scale-right, body #main .inner .info .second .fa-cogs, body #main .inner .info .third .fa-desktop, body #main .inner .info .third .fa-chart-line, body #main .inner .info .third .fa-balance-scale-right, body #main .inner .info .third .fa-cogs, body #main .inner .info .four .fa-desktop, body #main .inner .info .four .fa-chart-line, body #main .inner .info .four .fa-balance-scale-right, body #main .inner .info .four .fa-cogs {
+        width: 33px;
+        height: 33px;
+        background-color: #fff;
+        border: 3px solid #ccc;
+        padding: 18px;
+        border-radius: 50%;
+        color: var(--point);
+        z-index: 2;
+        position: relative; }
+      body #main .inner .info .first h2, body #main .inner .info .second h2, body #main .inner .info .third h2, body #main .inner .info .four h2 {
+        font-size: 14px;
+        font-weight: 900;
+        margin: 15px;
+        color: var(--point); }
+      body #main .inner .info .first button, body #main .inner .info .second button, body #main .inner .info .third button, body #main .inner .info .four button {
+        border: 1px solid var(--point);
+        background-color: var(--point);
+        margin-bottom: 80px;
+        border-radius: 20px;
+        font-weight: 700; }
+        body #main .inner .info .first button:focus, body #main .inner .info .second button:focus, body #main .inner .info .third button:focus, body #main .inner .info .four button:focus {
+          outline: none; }
+        body #main .inner .info .first button:hover, body #main .inner .info .second button:hover, body #main .inner .info .third button:hover, body #main .inner .info .four button:hover {
+          background-color: #fff; }
+        body #main .inner .info .first button:hover a, body #main .inner .info .second button:hover a, body #main .inner .info .third button:hover a, body #main .inner .info .four button:hover a {
+          color: #555; }
+        body #main .inner .info .first button a, body #main .inner .info .second button a, body #main .inner .info .third button a, body #main .inner .info .four button a {
+          display: block;
+          padding: 6px 20px;
+          color: var(--point);
+          color: white;
+          font-size: 11px; }
     body #main .inner .picture img {
       width: 35%; }
     body #main .inner .picture .title {
-      width: 53%; }
+      width: 50%; }
       body #main .inner .picture .title .text-box {
         margin-bottom: 10px; }
         body #main .inner .picture .title .text-box h1 {
           font-size: 24px; }
         body #main .inner .picture .title .text-box .description h2 {
           padding-bottom: 7px; }
+        body #main .inner .picture .title .text-box .description p {
+          overflow: hidden; }
     body #main .inner .middle-picture {
       width: 100%; }
       body #main .inner .middle-picture .left {
@@ -2483,220 +2526,33 @@ p {
           background: linear-gradient(45deg, rgba(173, 216, 230, 0.8), rgba(238, 130, 238, 0.7));
           opacity: 0;
           transition: all 0.5s; }
-      body #main .inner .middle-picture .right-btn {
-        background-color: var(--point);
-        border: 1px solid var(--point);
-        outline: none;
-        position: absolute;
-        bottom: 10%;
-        left: 50%;
-        transform: translateX(-50%); }
-        body #main .inner .middle-picture .right-btn:hover {
-          background-color: #fff; }
-        body #main .inner .middle-picture .right-btn:hover a {
-          color: #333; }
-        body #main .inner .middle-picture .right-btn a {
-          color: white;
-          font-size: 12px;
-          padding: 4px 20px;
-          display: block; }
+      body #main .inner .middle-picture .right-btn a {
+        font-size: 14px; }
       body #main .inner .middle-picture .text-box {
-        width: 200px;
-        font-size: 13px;
-        text-align: center;
-        background-color: #fff;
-        border: 3px solid #eee;
-        padding: 20px;
-        z-index: 3;
-        position: absolute;
-        top: 15%;
-        left: 7%; }
-        body #main .inner .middle-picture .text-box small {
-          color: var(--point); }
-        body #main .inner .middle-picture .text-box h3 {
-          margin-top: 10px;
-          margin-bottom: 15px; }
+        width: 20vw;
+        font-size: 14px; }
         body #main .inner .middle-picture .text-box span {
-          display: block;
-          padding-top: 20px;
-          font-size: 11px; }
-    body #main .inner .blue {
-      margin: 130px auto;
-      text-align: center;
-      position: relative; }
-      body #main .inner .blue::after {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        transform: scale(1);
-        transition: all 1s; }
-      body #main .inner .blue img {
-        position: absolute;
-        right: 13%;
-        bottom: -15%;
-        width: 550px;
-        height: 380px;
-        z-index: 1; }
-      body #main .inner .blue .blue-memo {
-        width: 90px;
-        height: 90px;
-        position: absolute;
-        right: 13%;
-        bottom: 40%;
-        z-index: 4;
-        padding: 10px;
-        font-size: 11px;
-        background-color: var(--point);
-        border: 0;
-        color: white; }
-      body #main .inner .blue .blue-text {
-        width: 450px;
-        height: 300px;
-        border: 3px solid var(--point);
-        position: relative;
-        z-index: 3;
-        left: 5%;
-        padding: 40px;
-        box-sizing: border-box; }
-        body #main .inner .blue .blue-text .in-blue {
-          color: white;
-          background-color: var(--point);
-          border: 0;
-          font-size: 10px;
-          position: absolute;
-          left: 10%;
-          margin-top: 22px;
-          padding: 6px 14px; }
-        body #main .inner .blue .blue-text .text {
-          width: 88%;
-          margin-top: 40px;
-          text-align: left; }
-          body #main .inner .blue .blue-text .text h1 {
-            margin-bottom: 15px;
-            font-size: 19px; }
-          body #main .inner .blue .blue-text .text p {
-            font-size: 12px; }
-  body #main .bar {
-    background-image: url(../img/legalor-bg1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    height: 430px; }
-    body #main .bar h1 {
-      font-size: 42px;
-      color: white;
-      text-align: center;
-      padding: 30px 0;
-      font-family: 'Lora'; }
-    body #main .bar p {
-      color: white;
-      font-size: 18px;
-      text-align: center; }
-    body #main .bar .counter-wrap {
-      width: 400px;
-      height: 128px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 50px  auto; }
-      body #main .bar .counter-wrap .number {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding: 0 60px;
-        color: white;
-        border-right: 1px solid #888; }
-        body #main .bar .counter-wrap .number:last-child {
-          border-right: none; }
-        body #main .bar .counter-wrap .number .counter {
-          font-size: 30px; }
-        body #main .bar .counter-wrap .number span {
-          padding-top: 20px;
-          color: #999; }
-  body #main .desc {
-    text-align: center; }
-    body #main .desc li {
-      display: inline-block;
-      font-family: 'Lora';
-      color: #999;
-      padding: 0px 72px;
-      font-size: 18px;
-      position: relative;
-      top: -100px; }
-      body #main .desc li::before {
-        content: '';
-        display: block;
-        width: 2px;
-        height: 120px;
-        background-color: #888;
-        position: relative;
-        top: 40px;
-        left: 140px; }
+          font-size: 12px; }
+  body #main .bar .counter-wrap {
+    width: 40vw;
+    height: 12.8vh; }
   body #main .companylogo {
-    text-align: center;
-    transform: scale(0.8); }
+    width: 100%;
+    overflow: hidden;
+    transform: scale(0.7); }
   body #main .wrap {
-    width: 1180px;
-    margin: 0 auto; }
+    width: 100%; }
   body #main .human {
-    padding-top: 100px; }
-    body #main .human::after {
-      content: '';
-      display: block;
-      clear: both; }
+    padding-top: 30px; }
     body #main .human::before {
-      content: '';
-      display: block;
-      background-color: var(--point);
-      width: 70px;
-      height: 3px;
-      position: absolute;
-      left: 50%; }
-    body #main .human img {
-      float: left;
-      width: 50%; }
-    body #main .human .introduce {
-      float: right;
-      width: 50%; }
-      body #main .human .introduce h1 {
-        font-size: 36px;
-        letter-spacing: 2px;
-        color: var(--blue);
-        padding-top: 15px; }
-      body #main .human .introduce p {
-        width: 85%;
-        padding: 20px 0; }
+      width: 7%;
+      height: 3px; }
     body #main .human .intro-text {
       width: 100%; }
-      body #main .human .intro-text h3 {
-        font-size: 15px;
-        color: var(--blue); }
-      body #main .human .intro-text .fa-paint-brush, body #main .human .intro-text .fa-graduation-cap {
-        color: var(--point);
-        font-size: 36px;
-        margin: 15px 0; }
       body #main .human .intro-text .left {
-        background-color: #fff;
-        padding: 24px;
-        float: left;
-        width: 45%;
-        box-sizing: border-box; }
+        padding: 15px; }
       body #main .human .intro-text .right {
-        background-color: #fff;
-        padding: 24px;
-        float: left;
-        width: 45%;
-        box-sizing: border-box;
-        margin-left: 20px; }
+        padding: 15px; }
   body #footer {
     margin-top: 30px; }
     body #footer .inner {
