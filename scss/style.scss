@@ -1034,122 +1034,47 @@ p{
                     }
                 }
                 .picture{
-                    width: 90%;
-                    margin: 70px auto 100px auto;
-        
-                  
-               
-                    img{
-                        margin-right: 30px;
-                        width: 40%;
-                        padding: 35px;
-                        border: 3px solid #eee;
-                        border-radius: 10px;
-                        box-shadow: 0 10px 8px rgba(0,0,0,.3);
+             
+                    img{ 
+                        width: 35%;
                     }
-                    .title{
-                        float: right;
-                        width: 49%;
+
+                    .title{          
+                        width: 53%;
                         
-                        .text-box{
-                            float:left;
-                            margin-bottom: 30px;
-                            border-bottom: 2px solid #ddd;
-        
-                            &:last-child{
-                                border-bottom: 0;
-                            }
-        
+                        .text-box{                      
+                            margin-bottom: 10px;
+                        
                             h1{
-                                font-size: 34px;
-                                float: left;
-                                padding:0  20px;
-                                font-family: 'Hammersmith';
-                       
+                                font-size: 24px;
+                                               
                             }
                             .description{
-                                margin-top:8px;
+                            
                                 h2{
-                                    padding-bottom: 10px;
+                                    padding-bottom: 7px;
                                 }
-                                p{
-                                    color:var(--blue);
-                                    padding-bottom: 20px;
-                                    font-size: 13px;
-                                }
+                          
                             }
                         }
                     }
                     
                 }
                 .middle-picture{
-                    width: 80%;
-                    margin: 0px auto;
-                    position:relative;
-        
-            
-        
-                    &::after{
-                        content: '';
-                        display: block;
-                        clear: both;
-                    }
-                    
+                    width: 100%;
+                         
                     .left{
-                            float: left;
-                            width: 330px;
-                            height: 300px;
-                            z-index: 1;
-                            margin-left:280px;
-                            background: url(../img/visual_6.jpg);
-                            background-position: center;
-                            background-repeat: no-repeat;
-                            background-size: cover;
-                            transition: 0.4s;
-                            position:relative;
-        
-        
-                            &:hover::after{
-                                width: 270px;
-                            }
-        
-                            &::before{
-                                content:''; 
-                                display:block; 
-                                width:100%;
-                                height: 100%;
-                                position:absolute; 
-                                top:0;
-                                 left:0; 
-                                background:linear-gradient(45deg, rgba(173, 216, 230, 0.8), rgba(238, 130, 238, 0.7));
-                                opacity:0;
-                                 transition:all 0.5s; 
-                                
-                            }
-                      
-                            &:hover::before{
-                                opacity:1;
-                            }
                         
+                            width: 30vw;
+                            height: 30vh;
+                       
                     }
         
                     .right{
-                        float: left;
-                        width: 180px;
-                        height: 300px;
-                        margin-left: 25px;
-                        background: url(../img/visual_3.jpg);
-                        background-position: center;
-                        background-repeat: no-repeat;
-                        background-size: cover;
-                        transition: 0.4s;
-                        position:relative;
-        
-                        &:hover::before{
-                            opacity:1;
-                        }
-        
-        
+                    
+                        width: 18vw;
+                        height: 30vh;
+                      
                         &::before{
                             content:''; 
                             display:block; 
