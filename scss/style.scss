@@ -1016,7 +1016,8 @@ p{
                     }
                     .first, .second, .third, .four{
                         text-align:  center;
-                        width: calc(100% /4);
+                        width: calc(100% /2);
+                      
                         float: left;
                         font-size: 13px;
         
@@ -1027,7 +1028,7 @@ p{
                             display: block;
                             width: 82px;
                             height: 82px;
-                            border:2px dashed #999;
+                            border:none;
                             position:absolute;
                             z-index: 1;
                             background-color: transparent;
@@ -1206,6 +1207,13 @@ p{
                     height: 3px;
                      
                 }
+                .introduce {
+                    h1{
+                        font-size: 25px;
+                    }
+                }
+
+          
 
             
                 .intro-text{
@@ -1213,12 +1221,12 @@ p{
  
                     .left{
                
-                        padding: 15px;
+                        padding: 5px;
  
                     }
                     .right{
                    
-                        padding: 15px;
+                        padding: 5px;
                  
                     }
                
@@ -1335,7 +1343,7 @@ p{
                 width: 100%;
              
                 .company{
-                        padding-top:60px;
+                        padding-top:30px;
                     li{
                          display: inline-block;
                          padding-right: 10px;
@@ -1397,7 +1405,7 @@ p{
                     }
                      .social {
                             right:5%;
-                            margin-top: 8px;
+                            margin-top: 14px;
                      }
             }
         } 

@@ -2446,7 +2446,7 @@ p {
       width: 13%; }
     body #main .inner .info .first, body #main .inner .info .second, body #main .inner .info .third, body #main .inner .info .four {
       text-align: center;
-      width: calc(100% /4);
+      width: calc(100% /2);
       float: left;
       font-size: 13px;
       position: relative; }
@@ -2455,7 +2455,7 @@ p {
         display: block;
         width: 82px;
         height: 82px;
-        border: 2px dashed #999;
+        border: none;
         position: absolute;
         z-index: 1;
         background-color: transparent;
@@ -2547,12 +2547,14 @@ p {
     body #main .human::before {
       width: 7%;
       height: 3px; }
+    body #main .human .introduce h1 {
+      font-size: 25px; }
     body #main .human .intro-text {
       width: 100%; }
       body #main .human .intro-text .left {
-        padding: 15px; }
+        padding: 5px; }
       body #main .human .intro-text .right {
-        padding: 15px; }
+        padding: 5px; }
   body #footer {
     margin-top: 30px; }
     body #footer .inner {
@@ -2614,7 +2616,7 @@ p {
     body #footer .inner {
       width: 100%; }
       body #footer .inner .company {
-        padding-top: 60px; }
+        padding-top: 30px; }
         body #footer .inner .company li {
           display: inline-block;
           padding-right: 10px;
@@ -2654,7 +2656,7 @@ p {
         margin-top: 5px; }
       body #footer .inner .social {
         right: 5%;
-        margin-top: 8px; } }
+        margin-top: 14px; } }
 @media screen and (max-width: 539px) {
   body #header .inner #gnb {
     display: none; }
