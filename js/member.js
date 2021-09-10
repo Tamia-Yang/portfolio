@@ -57,11 +57,43 @@ function checkId(e) {
 //비밀번호 인증 함수 정의
 pwd1.onchange = cehckPw;
 pwd2.onchange = comparePw;
-
-
+var num = /[0-9]/;
+var eng = /[a-zA-Z]/;
+var spc = /[~!@#$%^&*()_+\]\[-]/;
+var i = 0;
 function cehckPw() {
     if (pwd1.value.length < 8) {
         alert("비밀번호는 8자리 이상이어야 합니다")
+    }
+    if (pwd1 === pwd2) {
+
+        //비번이 len의 갯수보다 큰지 확인
+        if (pwd1.length >= len) {
+            i++;
+        } else {
+            alert("비밀번호는 5자리 이상 입력하세요.");
+        }
+
+        //비번에 숫자가 포함되어 있는지 확인
+        if (num.test(pwd1)) {
+            i++;
+        } else {
+            alert("비밀번호에 숫자를 포함하세요.");
+        }
+
+        //문자가 포함되어 있는지 확인
+        if (eng.test(pwd1)) {
+            i++;
+        } else {
+            alert("비밀번호에 문자를 포함하세요.");
+        }
+
+        //특수문자가 포함되어 있는지 확인
+        if (spc.test(pwd1)) {
+            i++;
+        } else {
+            alert("비밀번호에 특수문자를 포함하세요.");
+        }
     }
 }
 function comparePw() {
@@ -69,7 +101,30 @@ function comparePw() {
         alert("암호가 틀립니다. 다시 입력하세요");
         pwd2.value = "";
         pwd2.focus();
+    }  //비번이 len의 갯수보다 큰지 확인
+
+
+    //비번에 숫자가 포함되어 있는지 확인
+    if (num.test(pwd1)) {
+        i++;
+    } else {
+        alert("비밀번호에 숫자를 포함하세요.");
     }
+
+    //문자가 포함되어 있는지 확인
+    if (eng.test(pwd1)) {
+        i++;
+    } else {
+        alert("비밀번호에 문자를 포함하세요.");
+    }
+
+    //특수문자가 포함되어 있는지 확인
+    if (spc.test(pwd1)) {
+        i++;
+    } else {
+        alert("비밀번호에 특수문자를 포함하세요.");
+    }
+
 }
 
 // function isPwd(name1, name2, len) {
@@ -84,35 +139,7 @@ function comparePw() {
 //     var eng = /[a-zA-Z]/;
 //     var spc = /[~!@#$%^&*()_+\]\[-]/;
 
-//     if (pwd1 === pwd2) {
 
-//         //비번이 len의 갯수보다 큰지 확인
-//         if (pwd1.length >= len) {
-//             i++;
-//         } else {
-//             alert("비밀번호는 5자리 이상 입력하세요.");
-//         }
-
-//         //비번에 숫자가 포함되어 있는지 확인
-//         if (num.test(pwd1)) {
-//             i++;
-//         } else {
-//             alert("비밀번호에 숫자를 포함하세요.");
-//         }
-
-//         //문자가 포함되어 있는지 확인
-//         if (eng.test(pwd1)) {
-//             i++;
-//         } else {
-//             alert("비밀번호에 문자를 포함하세요.");
-//         }
-
-//         //특수문자가 포함되어 있는지 확인
-//         if (spc.test(pwd1)) {
-//             i++;
-//         } else {
-//             alert("비밀번호에 특수문자를 포함하세요.");
-//         }
 
 //         if (i === 4) {
 //             $pwd1.removeClass("error");
@@ -150,16 +177,16 @@ function comparePw() {
 // }
 
 //select 인증 함수 정의
-function isSelect(name) {
-    var sel = $("select[name=" + name + "]").children("option:selected").val();
-    var msg = $("select[name=" + name + "]").children("option").eq(0).text();
+// function isSelect(name) {
+//     var sel = $("select[name=" + name + "]").children("option:selected").val();
+//     var msg = $("select[name=" + name + "]").children("option").eq(0).text();
 
-    if (sel == "") {
-        alert(msg);
-        $("select[name=" + name + "]").addClass("error");
-        return false;
-    } else {
-        $("select[name=" + name + "]").removeClass("error");
-        return true;
-    }
-}
+//     if (sel == "") {
+//         alert(msg);
+//         $("select[name=" + name + "]").addClass("error");
+//         return false;
+//     } else {
+//         $("select[name=" + name + "]").removeClass("error");
+//         return true;
+//     }
+// }
