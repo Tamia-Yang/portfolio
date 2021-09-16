@@ -27,28 +27,67 @@ $useridConfirm.addEventListener("click", function () {
 
 // 텍스트 인증 함수 정의
 
-var len = $userem.length;
 
-function isTxt($userem, len) {
-    if (len == undefined & len > 12)
-        var txt = $("[name=" + $userem + "]").val();
-    var msg = $("[name=" + $userem + "]").attr("placeholder");
 
-    if (txt == "") {
-        alert(msg);
-        $("[name=" + $userem + "]").addClass("error");
-        return false;
-    } else {
-        if (txt.length < len) {
-            alert("최소 " + len + "글자 이상 입력하세요!");
-            $("[name=" + $userem + "]").addClass("error");
-            return false;
-        } else {
-            $("[name=" + $userem + "]").removeClass("error");
-            return true;
-        }
+pwd1.addEventListener("change", function () {
+    var pwd1 = document.querySelector("#pwd1");
+
+    var pwem = document.querySelector(".pwem");
+
+    var pwdlen = pwd1.value;
+    var len = pwdlen.length;
+    if (len == undefined || len > 12) {
+
+        pwem.textContent = "최대 " + 12 + "글자 이내로 입력하세요!"
+        pwem.style.color = "red";
+
+
+    } else if (len < 4) {
+        pwem.textContent = "최소 " + 4 + "글자 이상 입력하세요!";
+        pwem.style.color = "red";
+        pwem = "";
+
     }
-}
+    else {
+        pwem.textContent = "비밀번호는 최대12자이내,문자,숫자,특수문자 조합으로 입력해주세요.";
+        pwem.style.color = "#777";
+    }
+
+
+});
+
+pwd2.addEventListener("change", function () {
+    var pwd2 = document.querySelector("#pwd2");
+    var pwd2confirm = document.querySelector(".pwd2confirm");
+
+    if (pwd1.value == pwd2.value) {
+        console.log(pwd2.value)
+        pwd2confirm.classList.remove("active");
+    } else {
+        pwd2confirm.classList.add("active");
+    }
+});
+
+
+
+// function isTxt($userem, len) {
+//     if (len == undefined & len > 12)
+
+//         if (txt == "") {
+//             alert(msg);
+//             $("[name=" + $userem + "]").addClass("error");
+//             return false;
+//         } else {
+//             if (txt.length < len) {
+//                 alert("최소 " + len + "글자 이상 입력하세요!");
+//                 $("[name=" + $userem + "]").addClass("error");
+//                 return false;
+//             } else {
+//                 $("[name=" + $userem + "]").removeClass("error");
+//                 return true;
+//             }
+//         }
+// }
 
 // //  아이디 확인 
 // var userId = document.querySelector("#userid");

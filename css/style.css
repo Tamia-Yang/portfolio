@@ -663,10 +663,18 @@ input, a, button {
             border: 1px solid #ddd;
             color: #333;
             font-size: 12px; }
-          #register .inner .wrap .content table td em {
+          #register .inner .wrap .content table td #pwd2 {
+            display: inline-block; }
+          #register .inner .wrap .content table td .pwem {
             font-style: normal;
             font-size: 12px;
             color: #777; }
+          #register .inner .wrap .content table td .pwd2confirm {
+            display: inline-block;
+            visibility: hidden; }
+            #register .inner .wrap .content table td .pwd2confirm.active {
+              color: red;
+              visibility: visible; }
           #register .inner .wrap .content table td input[type="radio"] {
             color: red; }
         #register .inner .wrap .content table span {
@@ -1269,6 +1277,9 @@ input, a, button {
               top: 0;
               background-color: #EF4136;
               color: white; }
+            #tab #news .inner .wrap .head-news .pic .pwdconfirm {
+              color: red;
+              visibility: hidden; }
           #tab #news .inner .wrap .head-news .text {
             float: left;
             width: 480px;

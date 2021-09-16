@@ -378,7 +378,10 @@
                                 background-color: #EF4136;
                                 color: white;
                             }
-                        
+                        .pwdconfirm {
+                            color: red;
+                            visibility: hidden;
+                        }
                         }
                         .text{ 
                             float: left;

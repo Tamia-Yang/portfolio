@@ -214,6 +214,7 @@
                             padding-bottom: 0;
                             display: none;
                             }
+                      
                         
 
                         #sample4_jibunAddress{
@@ -244,18 +245,34 @@
                             color:#333;
                             font-size: 12px;
                         }
-                        em {
+                        #pwd2{
+                            display: inline-block;
+                        }
+                        .pwem {
                             font-style: normal;
                             font-size: 12px;
                             color:#777;
+                            
+                        }
+                        .pwd2confirm {
+                            display: inline-block;
+                            visibility: hidden;
+                            &.active {
+                                color: red;
+                                visibility: visible;
+                    
+                            }
                         }
                         input[type="radio"]{
                             color: red;
+
                         }
+
                     }
                     span{
                         color: red;
                     }
+                   
 
                     input {
                         border:1px solid #ccc;
