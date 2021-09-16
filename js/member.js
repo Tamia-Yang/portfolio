@@ -5,6 +5,7 @@ var $userem = document.querySelector(".useremail");
 $useridConfirm.addEventListener("click", function () {
 
     var ema = $userem.value;
+    // 이메일 형식 검증 
 
     if (/\S+@\S+\.\S+/.test(ema) == false) {
         conem.style.visibility = "visible";
