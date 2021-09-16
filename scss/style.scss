@@ -319,7 +319,7 @@ p{
                 
             }
             span{
-                display: block;
+                display: none;
                 margin: 30px auto;
                 margin-bottom: 60px;
                 width: 100px;
@@ -382,7 +382,8 @@ p{
                   
                 }
           
-                button{           
+                button{       
+                    display: inline-block;    
                     border:1px solid var(--point);
                     background-color: var(--point);
                     margin-bottom: 80px;

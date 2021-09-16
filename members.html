@@ -320,27 +320,33 @@
                                 <tr>
                                     <th><label for="userid">아이디</label><span>*</span>
                                     </th>
-                                    <td><input type="text" name="personal-userid" id="userid" required="required">
-                                        <button type="submit" value="userid-confirm"
-                                            class="userid-confirm">중복확인</button>
+                                    <td><input type="text" name="personal-userid" id="userid">
+
                                     </td>
                                 </tr>
                                 <tr>
                                     <th><label for="useremail">이메일</label><span>*</span>
 
                                     </th>
-                                    <td><input type="email" name="useremail" id="useremail" placeholder="이메일을 입력해주세요"
-                                            required="required">
+                                    <td><input type="email" name="useremail" id="useremail" class="useremail"
+                                            placeholder="이메일을 입력해주세요" required="required">
+                                        <button type="submit" value="userid-confirm"
+                                            class="userid-confirm">중복확인</button>
+                                        <span class="conem"> 이메일 양식이 틀립니다.</span>
+
 
                                     </td>
+
                                 </tr>
                                 <tr>
-                                    <th><label for="pwd1">비밀번호<span>*</span>
+                                    <th>
+                                        <label for="pwd1">비밀번호<span>*</span>
                                         </label>
+
                                     </th>
                                     <td><input type="password" name="pwd1" id="pwd1" required="required">
-                                        <p>비밀번호가 틀렸습니다. </p>
-                                        <em>비밀번호는 8자이상, 문자, 숫자,
+
+                                        <em>비밀번호는 12자 이내, 문자, 숫자,
                                             특수문자 조합으로
                                             입력해주세요.</em>
 

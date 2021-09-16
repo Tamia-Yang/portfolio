@@ -198,6 +198,7 @@
                         background-color: #f8f8f8;
                         border-bottom:1px solid #ddd;
                         border-right:1px solid #ddd;
+                        line-height: 45px;
                     }
                     .personal {
                         padding: 0 15px;
@@ -276,6 +277,12 @@
                         padding: 6px 8px;
                         border: none;
                         outline: none;
+                    }
+                    .conem {
+                        visibility: hidden;
+                        color: red;
+                        font-size: 13px;
+                        display: inline-block;  
                     }
                    
                 }

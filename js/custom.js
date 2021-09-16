@@ -122,24 +122,24 @@ counters.forEach(counter => {
 
 // Text animation
 
-const title = document.getElementById("title")
-const text = 'Paint your portrait'
-let idx = 1
-let speedEl = 90
+// const title = document.getElementById("title")
+// const text = 'Paint your portrait'
+// let idx = 1
+// let speedEl = 90
 
-function writeText() {
-    title.innerText = text.slice(0, idx)
+// function writeText() {
+//     title.innerText = text.slice(0, idx)
 
-    idx++
+//     idx++
 
-    if (idx > text.length) {
-        idx = 30
-    }
+//     if (idx > text.length) {
+//         idx = 30
+//     }
 
-    setTimeout(writeText, speedEl)
-}
+//     setTimeout(writeText, speedEl)
+// }
 
-writeText()
+// writeText()
 
 // Text animation end
 
